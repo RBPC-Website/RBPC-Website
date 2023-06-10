@@ -13,17 +13,21 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    debug: true,
+    // disabled in production
+    debug: false,
+    backend: {
+      // translation file path
+      loadPath: '/assets/i18n/{{ns}}/{{lng}}.json',
+    },
     fallbackLng: 'en',
+    ns: ["home"],
+
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
+      formatSeparator: ",", 
     },
-    resources: {
-      en: {
-        translation: {
-          // here we will place our translations...
-        }
-      }
+    react: {
+      wait: true,
     }
   });
 

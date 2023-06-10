@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import {
   Routes,
   Route,
@@ -39,14 +39,14 @@ function App() {
   }, [location.pathname]); // triggered on route change
 
   return (
-    <>
+    <Suspense fallback={"Loading..."}>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>
-    </>
+    </Suspense>
   );
 }
 
