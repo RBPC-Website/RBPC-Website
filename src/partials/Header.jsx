@@ -1,8 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import ThemeChanger from "../utils/DarkTheme";
+import DropDown from "../utils/DropDown";
 import { Link } from 'react-router-dom';
 
 function Header() {
+
+  const menuItems = [
+    { id: 'en', label: 'English' },
+    { id: 'vi', label: 'Vietnamese' }
+  ];
+
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
+
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+    // Perform any additional logic based on the selected language
+  };
 
   const [top, setTop] = useState(true);
 
@@ -32,10 +45,22 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                <ThemeChanger />
+                <DropDown title="Language" selected={selectedLanguage}>
+                  {menuItems.map((menuItem) => (
+                    <li key={menuItem.id}>
+                      <a
+                        href="#0"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                        onClick={() => handleLanguageChange(menuItem.id)}
+                      >
+                        {menuItem.label}
+                      </a>
+                    </li>
+                  ))}
+                </DropDown>
               </li>
               <li>
-                <Link to="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>
+                <Link to="/" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Placeholder</Link>
               </li>
               <li>
                 <Link to="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Sign in</Link>

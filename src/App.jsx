@@ -5,8 +5,10 @@ import {
   useLocation
 } from 'react-router-dom';
 
+import { useTranslation, Trans } from 'react-i18next';
+
 import 'aos/dist/aos.css';
-import './css/style.css';
+import './css/tailwind.css';
 
 import AOS from 'aos';
 
@@ -16,6 +18,8 @@ import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
 
 function App() {
+
+  const { t } = useTranslation();
 
   const location = useLocation();
 
