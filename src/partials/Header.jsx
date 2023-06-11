@@ -15,18 +15,12 @@ function Header() {
     }
   }, []);
 
-  const menuItems = [
-    { id: 'en', label: 'English' },
-    { id: 'vi', label: 'Tiếng Việt' }
-  ];
-
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
-
   const handleLanguageChange = (e) => {
-    setSelectedLanguage(e);
     // Perform any additional logic based on the selected language
     i18n.changeLanguage(e.target.value);
-    window.location.reload();
+
+    // Reload the window when change language
+    // window.location.reload();
   };
 
   const [top, setTop] = useState(true);
