@@ -20,7 +20,7 @@ i18n
       loadPath: '/assets/i18n/{{ns}}/{{lng}}.json',
     },
     fallbackLng: 'en',
-    ns: ["home"],
+    ns: ["header", "hero"],
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
