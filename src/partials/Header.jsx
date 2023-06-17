@@ -15,18 +15,12 @@ function Header() {
     }
   }, []);
 
-  const menuItems = [
-    { id: 'en', label: 'English' },
-    { id: 'vi', label: 'Tiếng Việt' }
-  ];
-
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
-
   const handleLanguageChange = (e) => {
-    setSelectedLanguage(e);
     // Perform any additional logic based on the selected language
     i18n.changeLanguage(e.target.value);
-    window.location.reload();
+
+    // Reload the window when change language
+    // window.location.reload();
   };
 
   const [top, setTop] = useState(true);
@@ -77,10 +71,10 @@ function Header() {
                 </select>
               </li>
               <li>
-                <Link to="/" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">{t("contact")}</Link>
+                <Link to="/" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">{t("home")}</Link>
               </li>
               <li>
-                <Link to="/signin" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">{t("signin")}</Link>
+                <Link to="/contact-us" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">{t("contact")}</Link>
               </li>
               <li>
                 <Link to="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">

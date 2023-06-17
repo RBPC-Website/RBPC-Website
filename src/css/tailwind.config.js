@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './index.html',
     './src/**/*.{js,jsx,ts,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -135,6 +136,6 @@ module.exports = {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    require('flowbite/plugin')
   ],
 };
