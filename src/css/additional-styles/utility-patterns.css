@@ -7,10 +7,9 @@
     --para-color: #9CA3AF;
 }
 
-* {
-    background-color: var(--black);
-    color: var(--white);
-}
+/* *, div {
+    @apply text-gray-100 !important;
+} */
 
 /* Typography */
 .h1 {
@@ -31,11 +30,6 @@
 
 .p {
     @apply text-xl leading-tight tracking-tight;
-}
-
-.container {
-    padding: 8%;
-    width: 100%;
 }
 
 @screen md {

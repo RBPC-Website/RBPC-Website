@@ -10,10 +10,10 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          100: '#FBFBFB',
+          100: '#F3F3F3',
           200: '#EAEAEA',
           300: '#DFDFDF',
-          400: '#999999',
+          400: '#9CA3AF',
           500: '#7F7F7F',
           600: '#666666',
           700: '#4C4C4C',
@@ -41,6 +41,13 @@ module.exports = {
           700: '#2C7A7B',
           800: '#285E61',
           900: '#234E52',
+        },
+        gradient: {
+          'vertical': 'var(--gradient-vertical)',
+          'horizontal': 'var(--gradient-horizontal)',
+        },
+        black: {
+          100: '#101010',
         },
       },
       boxShadow: {

@@ -16,7 +16,7 @@ function Home() {
       <Header />
 
       {/*  Page content */}
-      <main className="flex-grow">
+      <main className="flex-grow bg-black-100 text-gray-100">
 
         {/*  Page sections */}
         <HeroHome />
