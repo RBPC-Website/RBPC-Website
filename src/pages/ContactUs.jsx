@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from '../partials/Header';
-import { ContactForm } from '../partials/ContactForm';
+import Header from '../partials-template/Header';
+import { ContactForm } from '../partials-template/ContactForm';
 
 function ContactUs() {
   return (
