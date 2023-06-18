@@ -5,7 +5,6 @@ import i18next from "i18next";
 
 function Header() {
 
-  // Scroll down to TODO, do not change anything here
   const { i18n, t } = useTranslation(["header"]);
 
   useEffect(() => {
@@ -38,7 +37,6 @@ function Header() {
       <div className="max-w-6xl mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
 
-          // TODO: Put your code here
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
@@ -51,7 +49,6 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
-                // Change only the style, do not change the select tag
                 <select
                   className='relative appearance-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-gray-600 hover:text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:ring-offset-2 transition duration-150 ease-in-out'
                   value={localStorage.getItem('i18nextLng')}

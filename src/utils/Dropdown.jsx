@@ -4,7 +4,8 @@ import Transition from '../utils/Transition';
 
 function Dropdown({
   children,
-  title
+  title,
+  selected
 }) {
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -23,7 +24,7 @@ function Dropdown({
         aria-expanded={dropdownOpen}
         onClick={(e) => e.preventDefault()}
       >
-        {title}
+        {title} ({selected})
         <svg className="w-3 h-3 fill-current text-gray-500 cursor-pointer ml-1 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
           <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
         </svg>
@@ -53,4 +54,5 @@ Dropdown.propTypes = {
     PropTypes.element.isRequired
   ]),
   title: PropTypes.string.isRequired,
+  selected: PropTypes.string.isRequired
 };

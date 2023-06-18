@@ -1,21 +1,17 @@
 module.exports = {
+  mode: "jit",
   content: [
     './index.html',
     './src/**/*.{js,jsx,ts,tsx}',
+    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
         gray: {
-          100: '#FBFBFB',
-          200: '#EAEAEA',
-          300: '#DFDFDF',
-          400: '#999999',
-          500: '#7F7F7F',
-          600: '#666666',
-          700: '#4C4C4C',
-          800: '#333333',
-          900: '#191919',
+          100: '#F3F3F3', // var(--white)
+          200: '#9CA3AF', // var(--para-color)
         },
         blue: {
           100: '#E6F0FD',
@@ -38,6 +34,16 @@ module.exports = {
           700: '#2C7A7B',
           800: '#285E61',
           900: '#234E52',
+        },
+        green: {
+          100: '#00FFA8',
+        },
+        gradient: {
+          'vertical': 'var(--gradient-vertical)',
+          'horizontal': 'var(--gradient-horizontal)',
+        },
+        black: {
+          100: '#101010',
         },
       },
       boxShadow: {
@@ -133,6 +139,6 @@ module.exports = {
     opacity: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    require('flowbite/plugin')
   ],
 };

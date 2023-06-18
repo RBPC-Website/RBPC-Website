@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from '../partials/Header';
-import Banner from '../partials/Banner';
+import Header from '../partials-template/Header';
 
 function SignUp() {
   return (
@@ -81,7 +80,7 @@ function SignUp() {
                   </div>
                 </form>
                 <div className="text-gray-600 text-center mt-6">
-                  Already using Simple? <Link to="/signin" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
+                  Already using Simple? <Link to="/contact-us" className="text-blue-600 hover:underline transition duration-150 ease-in-out">Sign in</Link>
                 </div>
               </div>
 
@@ -90,8 +89,6 @@ function SignUp() {
         </section>
 
       </main>
-
-      <Banner />
 
     </div>
   );

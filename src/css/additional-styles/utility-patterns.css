@@ -1,10 +1,23 @@
+:root {
+    --green: #00FFA8;
+    --gradient-vertical: linear-gradient(#C5F5E5 0%, #00FFA8 100%);
+    --graient-horizontal: linear-gradient(90deg, #00FFA8 100%, #C5F5E5 0%);
+    --black: #101010;
+    --white: #F3F3F3;
+    --para-color: #9CA3AF;
+}
+
+/* *, div {
+    @apply text-gray-100 !important;
+} */
+
 /* Typography */
 .h1 {
-    @apply text-4xl font-extrabold leading-tight tracking-tighter;
+    @apply text-7xl font-extrabold leading-tight tracking-tighter;
 }
 
 .h2 {
-    @apply text-3xl font-extrabold leading-tight tracking-tighter;
+    @apply text-5xl font-extrabold leading-tight tracking-tighter;
 }
 
 .h3 {
@@ -13,6 +26,10 @@
 
 .h4 {
     @apply text-2xl font-bold leading-snug tracking-tight;
+}
+
+.p {
+    @apply text-xl leading-tight tracking-tight;
 }
 
 @screen md {

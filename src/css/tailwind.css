@@ -18,6 +18,16 @@
     }
 }
 
+@layer components {
+    html {
+        @apply scroll-smooth !overflow-x-hidden;
+    }
+    
+    body {
+        @apply m-0 scroll-smooth antialiased !overflow-x-hidden;
+    }
+}
+
 /* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
 [x-cloak=""] {
     display: none;
