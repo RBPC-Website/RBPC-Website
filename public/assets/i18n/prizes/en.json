@@ -1,0 +1,10 @@
+{
+    "prizes": "Prizes",
+    "firstPrize": "First Prize",
+    "secondPrize": "Second Prize",
+    "thirdPrize": "Third Prize",
+    "encouragementPrizes": "Encouragement Prizes",
+    "peoplesChoicePrize": "People's Choice Prize",
+    "prizeValue": "Prizes worth around {value} per team with 4 members",
+    "teamMembers": "with 4 team members"
+}

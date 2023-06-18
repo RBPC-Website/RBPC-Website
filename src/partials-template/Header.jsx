@@ -49,7 +49,7 @@ function Header() {
             <ul className="flex flex-grow justify-end flex-wrap items-center">
               <li>
                 <select
-                  className='relative appearance-none rounded-md border-none font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out'
+                  className='relative appearance-none rounded-md border-none font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-1 ease-in-out'
                   value={localStorage.getItem('i18nextLng')}
                   onChange={handleLanguageChange}
                 >
