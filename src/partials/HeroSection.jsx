@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 function HeroSection() {
     const { t } = useTranslation(["hero"]);
@@ -10,7 +9,7 @@ function HeroSection() {
         <section className="relative bg-black-100">
             
             {/*   
-                Use the page content here, you only need to copy {t("<the content>"")}:
+                Use the page content here, you only need to copy {t("<the content>")}:
                 Title: {t("title")}
                 Subtitle: {t("subtitle")}
                 Description: {t("description")}
@@ -21,3 +20,5 @@ function HeroSection() {
         </section>
     )
 }
+
+export default HeroSection;
