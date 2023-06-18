@@ -10,6 +10,7 @@ import Footer from '../partials-template/Footer';
 
 function Home() {
   return (
+    // Do not change any styles in this file
     <div className="flex flex-col min-h-screen overflow-hidden">
 
       {/*  Site header */}
