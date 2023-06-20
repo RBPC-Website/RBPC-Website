@@ -1,0 +1,28 @@
+{
+    "digitalMarketing": {
+        "major": "Digital Marketing Major",
+        "subTheme": "Sustainable Marketing Solutions for Consumer Financial Empowerment",
+        "description": "Fosters a customer-centric approach empowering digital consumers to make informed choices and save money amidst uncertain times. Develop a business plan that provides innovative solutions to address consumers’ sustainable practices and mindful consumption to help them stretch their budgets."
+    },
+    "tourismHospitality": {
+        "major": "Tourism & Hospitality Management Major",
+        "subTheme": "Innovating Sustainability in Tourism & Hospitality",
+        "description": "With the dedication to advancing sustainability and innovation in tourism and hospitality, participants are encouraged to explore creative solutions that enhance the sustainability of tourism and hospitality operations, minimise environmental impact, support local communities, and enhance visitor experiences."
+    },
+    "economicsBlockchainFinance": {
+        "major": "Economics, Blockchain Enabled Business, Finance, Accounting Major",
+        "subTheme": "Financial Innovation through fintech, blockchain, and AI",
+        "description": "We are seeking creative ideas and solutions to address a real-world problem in the financial markets. Your proposed business plan should identify an issue within the financial market and present a solution utilising fintech, blockchain, and/or AI technologies. The ultimate aim of the project should be to enhance the digitisation of financial markets while advocating sustainable industry practices."
+    },
+    "businessTechnology": {
+        "major": "Business & Technology Major",
+        "subTheme": "Supporting sustainability with disruptive technologies",
+        "description": "We are seeking innovative business ideas that utilise disruptive technologies, such as blockchain and Artificial Intelligence (AI), to address the issue of unwanted belongings for customers. By extending the lifespan of these products, your business can help reduce carbon emissions from production and contribute to a more sustainable world."
+    },
+    "managementChange": {
+        "major": "Management & Change Major",
+        "subTheme": "Change the way we move and revolutionize e-mobility in Vietnam!",
+        "description": "From smart shipping to disruptive electric vehicles, how can your business take part in the transformation of mobility? Unleash your innovative ideas in our electrifying business plan competition. Seize the opportunity to shape the future of transportation."
+    }
+}
+  
