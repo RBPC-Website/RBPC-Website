@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
 // import { Button } from 'flowbite-react';
-import Badge from '../partials-template/Badge';
+import Badge from '../utils/Badge';
 import transitionImg from '../images/layered-waves-haikei.svg';
 
 function RulesAndRegulation() {
