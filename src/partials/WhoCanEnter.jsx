@@ -22,7 +22,7 @@ function WhoCanEnter() {
                 <p className='text-gray-200 lg:text-[24px] md:text-[24px] text-[12px] text-center mt-7'>{t("description")}</p>
             </div>
             {/* Wave transition */}
-            <div className='w-full bg-white border border-2 border-l-green-100 border-t-0 border-r-0 border-b-0'>
+            <div className='w-full bg-white -mt-1 border border-2 border-l-green-100 border-t-0 border-r-0 border-b-0'>
                     <img className='w-full object-cover' src={transitionImg} alt='layered wave transition'></img>
                 </div>
         </section>
