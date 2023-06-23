@@ -14,9 +14,9 @@ function WhoCanEnter() {
                 Who can enter: {t("whoCanEnter")}
                 Description: {t("description")}
             */}
-            <div className='relative w-full bg-white pt-12 2xl:pb-[300px] xl:pb-[190px] lg:pb-[180px] md:pb-[130px] pb-[40px] xl:px-[200px] md:px-[60px] px-[20px] rounded-t-[24px]'>
-                <h1 className='text-black-100 text-3xl font-extrabold sm:text-4xl lg:text-[70px] md:text-[60px] font-bold text-center'>{t("whoCanEnter")}?</h1>
-                <p className='text-gray-200 lg:text-[24px] md:text-[24px] text-center mt-7'>{t("description")}</p>
+            <div className='relative w-full bg-white pt-12 2xl:pb-[300px] xl:pb-[190px] lg:pb-[180px] md:pb-[130px] pb-[40px] xl:px-[200px] md:px-[60px] px-[40px] rounded-t-[24px]'>
+                <h1 className='text-black-100 text-3xl font-extrabold sm:text-4xl lg:text-[70px] md:text-[60px] text-[32px] font-bold text-center'>{t("whoCanEnter")}?</h1>
+                <p className='text-gray-200 lg:text-[24px] md:text-[24px] text-[12px] text-center mt-7'>{t("description")}</p>
                 <div className='w-full absolute bottom-n10 left-0'>
                     <img className='w-full object-cover' src={transitionImg} alt='layered wave transition'></img>
                 </div>
