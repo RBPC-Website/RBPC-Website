@@ -7,6 +7,7 @@ import FeaturesBlocks from '../partials-template/FeaturesBlocks';
 import Testimonials from '../partials-template/Testimonials';
 import Newsletter from '../partials-template/Newsletter';
 import WhoCanEnter from '../partials/WhoCanEnter';
+import Timeline from '../partials/Timeline';
 import Footer from '../partials-template/Footer';
 
 function Home() {
@@ -27,6 +28,7 @@ function Home() {
         <Testimonials />
         <Newsletter /> */}
         <WhoCanEnter />
+        <Timeline />
       </main>
 
       {/*  Site footer */}

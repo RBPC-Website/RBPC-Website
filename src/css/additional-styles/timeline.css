@@ -1,0 +1,51 @@
+.phase-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    border-bottom-left-radius: 50px;
+    border-left: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.phase-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: 2px solid var(--green);
+    border-right: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.phase-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top: 2px solid var(--green);
+    border-left: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.phase-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    border-top-right-radius: 50px;
+    border-top: 2px solid var(--green);
+    border-right: 2px solid var(--green);
+}
