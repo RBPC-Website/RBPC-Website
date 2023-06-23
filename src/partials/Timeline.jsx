@@ -40,11 +40,11 @@ function Timeline() {
                 - {t("grandFinalistsPitch")}
             */}
             {/* Phase 1  */}
-            <div className='phase-1 relative px-16 py-12'>
+            <div className='phase-1 relative md:px-16 pl-12 py-12'>
                 {/* Phase Title */}
-                <h3 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h3 pb-4 align-middle'>
+                <h2 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h2 pb-4 align-middle'>
                     {t("preliminaryWorkshop")}
-                </h3>
+                </h2>
                 {/* Phase button */}
                 <div className='absolute bg-black-100 top-11 left-0 flex content-center transform translate-x-[-50%] h-[60px] w-[40px]'>
                     <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
@@ -58,11 +58,11 @@ function Timeline() {
                 <p className='p pb-4'>{t("preliminaryResultAnnouncementDetail")}</p>
             </div>
             {/* Phase 2 */}
-            <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-2 text-right px-16 py-12'>
+            <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-2 text-right md:px-16 pr-12 py-12'>
                 {/* Phase Title */}
-                <h3 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h3 pb-4'>
+                <h2 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h2 pb-4'>
                     {t("preliminarySemiFinal")}
-                </h3>
+                </h2>
                 {/* Phase button */}
                 <div className='absolute bg-black-100 top-11 right-0 flex content-center transform translate-x-[50%] h-[60px] w-[40px]'>
                     <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
@@ -74,11 +74,11 @@ function Timeline() {
                 <p className='p pb-4'>{t("finalistAnnouncementDescription")}</p>
             </div>
             {/* Phase 3 */}
-            <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-3 px-16 py-12'>
+            <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-3 md:px-16 pl-12 py-12'>
                 {/* Phase Title */}
-                <h3 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h3 pb-4'>
+                <h2 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h2 pb-4'>
                     {t("preliminaryWorkshop")}
-                </h3>
+                </h2>
                 {/* Phase button */}
                 <div className='absolute bg-black-100 top-11 left-0 flex content-center transform translate-x-[-50%] h-[60px] w-[40px]'>
                     <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
@@ -92,11 +92,11 @@ function Timeline() {
                 <p className='p pb-4'>{t("preliminaryResultAnnouncementDetail")}</p>
             </div>
             {/* Phase 4 */}
-            <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-4 text-right px-16 py-12'>
+            <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-4 text-right md:px-16 pr-12 py-12'>
                 {/* Phase Title */}
-                <h3 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h3 pb-4'>
+                <h2 className='text-transparent bg-clip-text bg-gradient-to-t from-green-100 to-green-200 h2 pb-4'>
                     {t("preliminaryWorkshop")}
-                </h3>
+                </h2>
                 {/* Phase button */}
                 <div className='absolute bg-black-100 top-11 right-0 flex content-center transform translate-x-[50%] h-[60px] w-[40px]'>
                     <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
