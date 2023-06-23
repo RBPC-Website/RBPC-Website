@@ -22,7 +22,7 @@ const TypewriterTitle = () => {
                 if (currentCharIndex > titleText.length) {
                     clearInterval(interval);
                 }
-            }, 80); // Typing speed: 100 milliseconds per character
+            }, 70); // Typing speed: 70 milliseconds per character
         };
 
         startTypewriterEffect();
@@ -35,13 +35,13 @@ const TypewriterTitle = () => {
     return (
         <h1
             ref={titleRef}
-            className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-green-100 md:text-5xl lg:text-5xl"
+            className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl"
         ></h1>
     );
 };
 
 
-const Title = () => {
+const HackedTitle = () => {
     const { t } = useTranslation(["hero"]);
     useEffect(() => {
         const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -93,8 +93,11 @@ const Title = () => {
 function HeroSection() {
     const { t } = useTranslation(["hero"]);
 
+    {/* Split the theme Description to make the theme bold */}
+    let themeDescriptionArr = t("themeDescription").split("<b>") 
+
     return (
-        <section className="relative bg-black-100">
+        <section className="relative bg-black-100 flex flex-col justify-center items-center">
 
             {/*   
                 Use the page content here, you only need to copy {t("<the content>")}:
@@ -107,14 +110,23 @@ function HeroSection() {
             */}
             <div className='bg-hero bg-cover bg-center h-screen flex justify-center items-center'>
                 <div className='flex flex-col justify-center items-center text-center w-2/3'>
-                    {/* <Title /> */}
                     <TypewriterTitle />
-                    <Title />
                     <p className="mb-6 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48">{t("description")}</p>
                 </div>
             </div>
-            <div className=''>
-                <h1>{t("beNext")}</h1>
+            <div className='flex justify-center items-center flex-col w-3/4 text-center'>
+                <h1 className='mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("beNext")}</h1>
+                <p className="mb-6 text-lg font-normal text-white lg:text-xl">
+                    {themeDescriptionArr.map((part, index) => {
+                        if (index == 1) {
+                            // Apply bold styling to the theme
+                            return <b>{part}</b>;
+                        } else {
+                            return part;
+                        }
+                    })}
+                </p>
+                <p className="mb-6 text-lg font-normal text-white lg:text-xl">{t("origin")}</p>
             </div>
         </section>
     )
