@@ -7,6 +7,7 @@ import FeaturesBlocks from '../partials-template/FeaturesBlocks';
 import Testimonials from '../partials-template/Testimonials';
 import Newsletter from '../partials-template/Newsletter';
 import Footer from '../partials-template/Footer';
+import HeroSection from '../partials/HeroSection';
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <main className="flex-grow bg-black-100 text-gray-100">
 
         {/*  Page sections */}
+        <HeroSection /> {/* My area of testing */}
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
