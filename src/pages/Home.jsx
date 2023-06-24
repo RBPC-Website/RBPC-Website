@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../partials-template/Header';
 import HeroHome from '../partials-template/HeroHome';
+import AreaOfFocus from '../partials/AreaOfFocus';
 import FeaturesHome from '../partials-template/Features';
 import FeaturesBlocks from '../partials-template/FeaturesBlocks';
 import Testimonials from '../partials-template/Testimonials';
@@ -26,6 +27,7 @@ function Home() {
         <FeaturesBlocks />
         <Testimonials />
         <Newsletter /> */}
+        <AreaOfFocus />
         <RulesAndRegulation />
 
       </main>
