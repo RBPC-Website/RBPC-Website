@@ -69,7 +69,7 @@ export default function Countdown() {
         {showBanner && (
             <div id="sticky-banner" tabindex="-1" className="fixed top-0 left-0 z-50 flex justify-between w-full py-1 px-3 border-b border-gray-200 bg-green-100 text-black-100">
                 <div className="flex items-center mx-auto">
-                    <p className="flex items-center text-[14px] text-black-100">
+                    <p className="flex items-center text-[11px] sm:text-[14px] text-black-100">
                         <span className="inline-flex mr-2">
                             <svg class="w-4 h-4 text-black-100" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"/>
