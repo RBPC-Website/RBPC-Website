@@ -21,7 +21,7 @@ function Home() {
       <main className="flex-grow bg-black-100 text-gray-100">
 
         {/*  Page sections */}
-        <HeroSection /> {/* My area of testing */}
+        <HeroSection />
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
