@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         
-    <footer className="w-full px-[7.5%] mx-auto bg-white text-sm text-center">
+    <footer className="w-full mx-auto bg-white text-sm text-center">
         <hr className="border-gray-200" />
         <div className="px-6 py-6 bg-gray-100 flex flex-wrap items-center justify-between sm:justify-center gap-5">
             <a href="#" className="text-gray-500 hover:text-black-100 hover:underline flex items-center justify-between gap-2">
