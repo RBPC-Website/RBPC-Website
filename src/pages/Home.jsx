@@ -8,6 +8,7 @@ import Testimonials from '../partials-template/Testimonials';
 import Newsletter from '../partials-template/Newsletter';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
 import Footer from '../partials-template/Footer';
+import HeroSection from '../partials/HeroSection';
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
       <main className="flex-grow bg-black-100 text-gray-100">
 
         {/*  Page sections */}
+        <HeroSection />
         {/* <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
