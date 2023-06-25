@@ -8,6 +8,7 @@ import Testimonials from '../partials-template/Testimonials';
 import Newsletter from '../partials-template/Newsletter';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
 import Footer from '../partials-template/Footer';
+import Prize from '../partials/Prizes';
 
 function Home() {
   return (
@@ -26,12 +27,13 @@ function Home() {
         <FeaturesBlocks />
         <Testimonials />
         <Newsletter /> */}
-        <RulesAndRegulation />
+        {/* <RulesAndRegulation /> */}
+        <Prize />
 
       </main>
 
       {/*  Site footer */}
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   );
