@@ -152,8 +152,8 @@ const AreaOfFocusComponent = () => {
     };
 
     return (
-        <div className='sm:hidden'>
-            <div className="grid grid-cols-5 gap-4 md:grid-cols-3 md:gap-11 justify-items-center">
+        <div className='small:hidden'>
+            <div className="grid grid-cols-5 gap-4 medium:grid-cols-3 medium:gap-11 justify-items-center">
                 {renderAreaCard("tourismHospitality")}
                 {renderAreaCard("digitalMarketing")}
                 {renderAreaCard("businessTechnology")}
