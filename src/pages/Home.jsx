@@ -6,6 +6,7 @@ import FeaturesHome from '../partials-template/Features';
 import FeaturesBlocks from '../partials-template/FeaturesBlocks';
 import Testimonials from '../partials-template/Testimonials';
 import Newsletter from '../partials-template/Newsletter';
+import RulesAndRegulation from '../partials/RulesAndRegulation';
 import Footer from '../partials-template/Footer';
 import JudgingCriteria from '../partials/JudgingCriteria';
 
@@ -27,6 +28,8 @@ function Home() {
         <Testimonials />
         <Newsletter /> */}
         <JudgingCriteria />
+        <RulesAndRegulation />
+
 
       </main>
 
