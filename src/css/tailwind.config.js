@@ -37,6 +37,7 @@ module.exports = {
         },
         green: {
           100: '#00FFA8',
+          200: '#C5F5E5'
         },
         gradient: {
           'vertical': 'var(--gradient-vertical)',
