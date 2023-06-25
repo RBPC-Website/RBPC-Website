@@ -40,6 +40,7 @@ module.exports = {
         },
         green: {
           100: '#00FFA8',
+          200: '#C5F5E5',
         },
         gradient: {
           'vertical': 'var(--gradient-vertical)',
@@ -131,6 +132,9 @@ module.exports = {
       },
       zIndex: {
         '-1': '-1',
+      },
+      borderWidth: {
+        'solid': '2px solid var(--green)',
       },
     },
   },
