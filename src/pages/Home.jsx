@@ -9,7 +9,7 @@ import Newsletter from '../partials-template/Newsletter';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
 import WhoCanEnter from '../partials/WhoCanEnter';
 import Timeline from '../partials/Timeline';
-import Footer from '../partials-template/Footer';
+import Footer from '../partials/Footer';
 import HeroSection from '../partials/HeroSection';
 
 function Home() {
