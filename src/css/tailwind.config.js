@@ -137,6 +137,31 @@ module.exports = {
         'solid': '2px solid var(--green)',
       },
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+      
+      'large': {'max': '1024px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'medium': {'max': '780px'},
+      // => @media (max-width: 767px) { ... }
+
+      'small': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
+    },
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],

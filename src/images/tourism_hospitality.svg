@@ -1,0 +1,24 @@
+<svg width="153" height="151" viewBox="0 0 153 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="153" height="151" rx="20" fill="black" />
+    <g clip-path="url(#clip0_1_3)">
+        <mask id="mask0_1_3" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="25" y="18" width="103" height="115">
+            <path d="M128 18.5H25V132.5H128V18.5Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_1_3)">
+            <path d="M39.4209 89.8939L97.8547 32.2113" stroke="white" strokeWidth="1.58255" strokeMiterlimit="10" />
+            <path d="M39.6073 32.1193L97.9323 89.7097" stroke="white" strokeWidth="1.58255" strokeMiterlimit="10" />
+            <path d="M83.2191 75.4464C67.0764 91.3816 47.4844 97.8538 39.452 89.9244C31.4194 81.9953 37.9915 62.6552 54.1186 46.72C70.2613 30.785 89.8532 24.3128 97.8857 32.242C105.918 40.1712 99.3618 59.5113 83.2191 75.4464Z" stroke="white" strokeWidth="1.58255" strokeMiterlimit="10" />
+            <path d="M97.8554 32.2104C113.962 48.1144 113.934 73.9207 97.7922 89.8502C81.6505 105.78 55.508 105.8 39.4014 89.8965C23.2945 73.9923 23.3228 48.1859 39.4646 32.2563C55.6062 16.3267 81.7486 16.3062 97.8554 32.2104Z" stroke="white" strokeWidth="1.5825" strokeMiterlimit="10" />
+            <path d="M108.979 21.2147C131.227 43.1774 131.197 78.8051 108.901 100.798C86.6215 122.807 50.5298 122.838 28.281 100.875" stroke="white" strokeWidth="1.58255" strokeMiterlimit="10" />
+            <path d="M55.7035 130.706H83.6695H83.7317V115.307" stroke="white" strokeWidth="1.58255" strokeMiterlimit="10" />
+            <path d="M96.798 128.528H100.232V132.117H96.798V128.528Z" fill="#E61E2A" />
+            <path d="M89.6978 128.528H93.3802V132.117H89.6978V128.528Z" fill="#E61E2A" />
+            <path d="M103.634 132.125L103.675 128.536L107.356 128.577L107.316 132.165L103.634 132.125Z" fill="#E61E2A" />
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0_1_3">
+            <rect width="103" height="114" fill="white" transform="translate(25 18.5)" />
+        </clipPath>
+    </defs>
+</svg>
