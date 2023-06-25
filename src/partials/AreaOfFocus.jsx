@@ -152,8 +152,8 @@ const AreaOfFocusComponent = () => {
     };
 
     return (
-        <>
-            <div className="w-11/12 flex flex-wrap justify-evenly gap-11">
+        <div className='sm:hidden'>
+            <div className="grid grid-cols-5 gap-4 md:grid-cols-3 md:gap-11 justify-items-center">
                 {renderAreaCard("tourismHospitality")}
                 {renderAreaCard("digitalMarketing")}
                 {renderAreaCard("businessTechnology")}
@@ -161,7 +161,7 @@ const AreaOfFocusComponent = () => {
                 {renderAreaCard("economicsBlockchainFinance")}
             </div>
             {renderContent()}
-        </>
+        </div>
     )
 }
 
@@ -170,7 +170,7 @@ function AreaOfFocus() {
     const { t } = useTranslation(["area-of-focus"]);
 
     return (
-        <section className="relative bg-black-100 flex flex-col justify-start items-center">
+        <section className="relative bg-black-100">
             {/*   
                 Use the page content here, you only need to copy {t("<the content>")}:
 
