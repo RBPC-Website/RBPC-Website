@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../partials-template/Header';
+import GlowyBlob from '../utils/GlowyBlob';
 import HeroHome from '../partials-template/HeroHome';
 import FeaturesHome from '../partials-template/Features';
 import FeaturesBlocks from '../partials-template/FeaturesBlocks';
@@ -20,7 +21,8 @@ function Home() {
 
       {/*  Page content */}
       <main className="flex-grow bg-black-100 text-gray-100">
-
+      <GlowyBlob />
+      
         {/*  Page sections */}
         <HeroSection />
         {/* <HeroHome />
