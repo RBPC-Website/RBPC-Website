@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../partials/Header';
+import GlowingBlob from '../utils/GlowyBlob';
 import Countdown from '../utils/Countdown';
 import AreaOfFocus from '../partials/AreaOfFocus';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
@@ -23,7 +24,8 @@ function Home() {
 
       {/*  Page content */}
       <main className="flex-grow bg-black-100 text-gray-100">
-
+      <GlowingBlob />
+      
         {/*  Page sections */}
         <HeroSection />
         <AreaOfFocus />
