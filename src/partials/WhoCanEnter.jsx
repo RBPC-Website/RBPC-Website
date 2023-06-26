@@ -17,7 +17,7 @@ function WhoCanEnter() {
             {/* Card Section */}
             <div className='relative w-full bg-white pt-12 xl:px-[200px] md:px-[60px] px-[40px] rounded-t-[24px]'>
                 {/* Who Can Enter Title */}
-                <h1 className='h1 text-black-100 font-extrabold text-center'>{t("whoCanEnter")}?</h1>
+                <h1 className='h1 text-black-100 text-center'>{t("whoCanEnter")}?</h1>
                 {/* Description */}
                 <p className='p text-center mt-7'>{t("description")}</p>
             </div>

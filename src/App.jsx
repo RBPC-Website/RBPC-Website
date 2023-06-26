@@ -11,9 +11,6 @@ import './css/tailwind.css';
 import AOS from 'aos';
 
 import Home from './pages/Home';
-import ContactUs from './pages/ContactUs';
-import SignUp from './pages/SignUp';
-import ResetPassword from './pages/ResetPassword';
 
 function App() {
 
@@ -38,9 +35,6 @@ function App() {
     <Suspense fallback={"Loading..."}>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>
     </Suspense>
   );

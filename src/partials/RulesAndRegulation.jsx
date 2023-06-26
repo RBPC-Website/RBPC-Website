@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
-// import { Button } from 'flowbite-react';
 import Badge from '../utils/Badge';
 import transitionImg from '../images/layered-waves-haikei.svg';
 
@@ -24,11 +23,11 @@ function RulesAndRegulation() {
             */}
             {/* Wave transition */}
             <div className='w-full'>
-                <img className='w-full object-cover' src={transitionImg} alt="layered wave transition" />
+                <img className='w-full object-cover z-0 translate-y-2' src={transitionImg} alt="layered wave transition" />
             </div>
             {/* Rules and regulation */}
-            <div className='w-full bg-white p-12 flex justify-center flex-col gap-10'>
-                <h1 className='text-black-100 text-2xl sm:text-4xl md:text-[64px] font-bold text-center'>{t("rulesAndRegulations")}</h1>
+            <div className='relative w-full bg-white p-12 flex justify-center flex-col gap-10 z-10'>
+                <h1 className='h1 text-black-100 text-2xl sm:text-4xl md:text-[64px] font-bold text-center'>{t("rulesAndRegulations")}</h1>
                 <Badge index={1}>{t("openToAll")}</Badge>
                 <Badge index={2}>{t("teamMembersFromDifferentSchools")}</Badge>
                 <Badge index={3}>{t("submissionDeadline")}</Badge>

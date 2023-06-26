@@ -66,7 +66,7 @@ function Prizes() {
                     01 {t("peoplesChoicePrize")}:
                         {t("prizeValue", { "value": "4,000,000 VNĐ" })} {t("teamMembers")}
             */}
-            <h1 className='h2 text-green-100 mb-3'>PRIZE</h1>
+            <h1 className='h1 text-green-100 mb-10'>{t("prizes")}</h1>
             <div className='flex flex-col sm:flex-row items-center  justify-between gap-y-8 data-tilt'>
                 <div className="prize h-[280px] sm:h-[340px] aspect-[8/10] lg:h-[500px] relative flex justify-center items-center">
                     <div className='absolute inset-0 h-full'>
@@ -79,7 +79,7 @@ function Prizes() {
                         <p className='p text-gray-200'>{t('teamMembers')}</p>
                     </div>
                 </div>
-                <div className="w-full sm:w-[50%] h-[340px] lg:h-[500px] flex flex-col justify-between">
+                <div className="w-full sm:w-[50%] sm:max-w-[520px] h-[340px] lg:h-[500px] flex flex-col justify-between">
                     {oddPrize(prize2, t("secondPrize"), 30, t('quantity'))}
                     {evenPrize(prize3, t("thirdPrize"), 20, t('quantity'))}
                     {oddPrize(prize2, t("encouragementPrizes"), 11, t('quantity'))}
