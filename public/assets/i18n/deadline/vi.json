@@ -1,0 +1,12 @@
+{
+    "OpeningRegistration" : "Opening of team registration",
+    "DeadlineRegistration" : "Deadline for team registration",
+    "Workshop" : "Hybrid/ online workshops and Q&A sessions",
+    "PreliminaryRound" : "Preliminary round's result announcement",
+    "VideoSubmission" : "Semi-final round commencement",
+    "DeadlineVideoSubmission" : "Deadline for semi-final round video submission",
+    "Finalist" : "Finalist announcement",
+    "Mentoring" : "Mentoring meetup and private training workshops",
+    "FinalWorkshop" : "Workshop for finalists",
+    "FinalRound" : "Project pitching and winner entitlement"
+}
