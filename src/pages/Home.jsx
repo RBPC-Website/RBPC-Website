@@ -10,6 +10,7 @@ import Footer from '../partials/Footer';
 import Prize from '../partials/Prizes';
 import HeroSection from '../partials/HeroSection';
 import PanelOfJudges from '../partials/PanelOfJudges';
+import BackToTop from '../partials/BackToTop';
 
 
 function Home() {
@@ -32,6 +33,7 @@ function Home() {
         <PanelOfJudges />
         <JudgingCriteria />
         <RulesAndRegulation />
+        <BackToTop />
       </main>
 
       {/*  Site footer */}
