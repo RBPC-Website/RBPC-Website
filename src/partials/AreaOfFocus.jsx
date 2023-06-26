@@ -152,7 +152,7 @@ const AreaOfFocusComponent = () => {
     };
 
     return (
-        <div className='small:hidden'>
+        <div className='relative small:hidden z-10'>
             <div className='ml-10'>
                 {renderContent()}
             </div>
