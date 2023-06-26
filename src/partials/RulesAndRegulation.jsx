@@ -24,7 +24,7 @@ function RulesAndRegulation() {
             */}
             {/* Wave transition */}
             <div className='w-full'>
-                <img className='w-full object-cover' src={transitionImg} alt="layered wave transition" />
+                <img className='w-full object-cover translate-y-[1.5rem]' src={transitionImg} alt="layered wave transition" />
             </div>
             {/* Rules and regulation */}
             <div className='w-full bg-white p-12 flex justify-center flex-col gap-10'>
