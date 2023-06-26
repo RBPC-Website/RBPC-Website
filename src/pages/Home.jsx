@@ -1,16 +1,12 @@
 import React from 'react';
 
 import Header from '../partials/Header';
-import HeroHome from '../partials-template/HeroHome';
 import AreaOfFocus from '../partials/AreaOfFocus';
-import FeaturesHome from '../partials-template/Features';
-import FeaturesBlocks from '../partials-template/FeaturesBlocks';
-import Testimonials from '../partials-template/Testimonials';
-import Newsletter from '../partials-template/Newsletter';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
 import WhoCanEnter from '../partials/WhoCanEnter';
 import Timeline from '../partials/Timeline';
 import Footer from '../partials/Footer';
+import Prize from '../partials/Prizes';
 import HeroSection from '../partials/HeroSection';
 
 function Home() {
@@ -26,19 +22,15 @@ function Home() {
 
         {/*  Page sections */}
         <HeroSection />
-        {/* <HeroHome />
-        <FeaturesHome />
-        <FeaturesBlocks />
-        <Testimonials />
-        <Newsletter /> */}
         <AreaOfFocus />
+        <Prize />
         <WhoCanEnter />
         <Timeline />
         <RulesAndRegulation />
       </main>
 
       {/*  Site footer */}
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
     
