@@ -1,12 +1,16 @@
 {
-    "OpeningRegistration" : "Opening of team registration",
-    "DeadlineRegistration" : "Deadline for team registration",
-    "Workshop" : "Hybrid/ online workshops and Q&A sessions",
-    "PreliminaryRound" : "Preliminary round's result announcement",
-    "VideoSubmission" : "Semi-final round commencement",
-    "DeadlineVideoSubmission" : "Deadline for semi-final round video submission",
-    "Finalist" : "Finalist announcement",
-    "Mentoring" : "Mentoring meetup and private training workshops",
-    "FinalWorkshop" : "Workshop for finalists",
-    "FinalRound" : "Project pitching and winner entitlement"
+    "OpeningRegistration": "Mở đăng ký đội",
+    "DeadlineRegistration": "Hạn chót đăng ký đội",
+    "Workshop": "Buổi hội thảo trực tuyến/hỗn hợp và phiên hỏi đáp",
+    "PreliminaryRound": "Thông báo kết quả vòng sơ loại",
+    "VideoSubmission": "Bắt đầu vòng bán kết",
+    "DeadlineVideoSubmission": "Hạn chót nộp video vòng bán kết",
+    "Finalist": "Thông báo danh sách thí sinh vào chung kết",
+    "Mentoring": "Buổi gặp gỡ và huấn luyện cá nhân",
+    "FinalWorkshop": "Buổi hội thảo cho thí sinh vào chung kết",
+    "FinalRound": "Trình bày dự án và công bố người chiến thắng",
+    "willStartIn": "sẽ bắt đầu sau",
+    "month": "tháng",
+    "day": "ngày",
+    "s": ""
 }

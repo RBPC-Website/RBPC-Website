@@ -13,11 +13,11 @@
 
 /* Typography */
 .h1 {
-    @apply lg:text-7xl sm:text-6xl text-5xl font-extrabold leading-tight tracking-tighter;
+    @apply lg:text-7xl sm:text-5xl text-4xl font-extrabold leading-tight tracking-tighter;
 }
 
 .h2 {
-    @apply lg:text-5xl sm:text-4xl text-2xl font-extrabold leading-tight tracking-tighter;
+    @apply lg:text-5xl sm:text-4xl text-3xl font-extrabold leading-tight tracking-tighter;
 }
 
 .h3 {
@@ -40,7 +40,7 @@
     @apply lg:max-w-[1100px] md:w-[85%] w-[90%]  mx-auto;
 }
 
-@screen sm {
+/* @screen sm {
     .h1 {
         @apply text-5xl;
     }
@@ -59,7 +59,7 @@
     .h2 {
         @apply text-4xl;
     }
-}
+}  */
 
 /* Buttons */
 .btn,
