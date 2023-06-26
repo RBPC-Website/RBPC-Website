@@ -3,11 +3,13 @@ import React from 'react';
 import Header from '../partials/Header';
 import AreaOfFocus from '../partials/AreaOfFocus';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
+import JudgingCriteria from '../partials/JudgingCriteria';
 import WhoCanEnter from '../partials/WhoCanEnter';
 import Timeline from '../partials/Timeline';
 import Footer from '../partials/Footer';
 import Prize from '../partials/Prizes';
 import HeroSection from '../partials/HeroSection';
+
 
 function Home() {
   return (
@@ -26,6 +28,7 @@ function Home() {
         <Prize />
         <WhoCanEnter />
         <Timeline />
+        <JudgingCriteria />
         <RulesAndRegulation />
       </main>
 
