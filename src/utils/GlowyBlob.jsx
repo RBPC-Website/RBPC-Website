@@ -12,7 +12,7 @@ export default function GlowyBlob() {
         blob.animate({
         left: `${pageX}px`,
         top: `${pageY}px`
-        }, {duration: 3000, fill: 'forwards'})
+        }, {duration: 1500, fill: 'forwards'})
     }
     })
     return (

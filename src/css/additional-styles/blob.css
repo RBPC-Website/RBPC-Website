@@ -2,10 +2,6 @@
     from {
         rotate: 0deg;
     }
-    
-    50% {
-        scale: 1 1.5;
-    }
 
     to {
         rotate: 360deg;
@@ -14,14 +10,14 @@
 
 #blob {
     background-color: white;
-    height: 500px;
+    height: 350px;
     position: absolute;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
     z-index: 10;
-    background: linear-gradient(to right, aquamarine, mediumpurple);
+    background: linear-gradient(to right, #f3f3f3, #f3f3f3);
     animation: rotate 20s infinite;
     filter: blur(200px);
     aspect-ratio: 1/1;
