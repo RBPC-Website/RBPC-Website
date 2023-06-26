@@ -1,7 +1,7 @@
 :root {
     --green: #00FFA8;
     --gradient-vertical: linear-gradient(#C5F5E5 0%, #00FFA8 100%);
-    --graient-horizontal: linear-gradient(90deg, #00FFA8 100%, #C5F5E5 0%);
+    --gradient-horizontal: linear-gradient(90deg, #00FFA8 100%, #C5F5E5 0%);
     --black: #101010;
     --white: #F3F3F3;
     --para-color: #9CA3AF;
@@ -33,10 +33,10 @@
 }
 
 .p {
-    @apply lg:text-lg sm:text-sm text-xs leading-tight tracking-tight;
+    @apply lg:text-xl md:text-lg text-base leading-tight tracking-tight text-gray-200;
 }
 
-/* @screen sm {
+@screen sm {
     .h1 {
         @apply text-5xl;
     }
@@ -55,7 +55,7 @@
     .h2 {
         @apply text-4xl;
     }
-} */
+}
 
 /* Buttons */
 .btn,

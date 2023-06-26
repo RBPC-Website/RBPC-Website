@@ -8,6 +8,9 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('src/images/hero-background.png')",
+      },
       colors: {
         gray: {
           100: '#F3F3F3', // var(--white)
@@ -37,7 +40,7 @@ module.exports = {
         },
         green: {
           100: '#00FFA8',
-          200: '#C5F5E5'
+          200: '#C5F5E5',
         },
         gradient: {
           'vertical': 'var(--gradient-vertical)',
@@ -130,6 +133,34 @@ module.exports = {
       zIndex: {
         '-1': '-1',
       },
+      borderWidth: {
+        'solid': '2px solid var(--green)',
+      },
+    },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+      
+      'large': {'max': '1024px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'medium': {'max': '780px'},
+      // => @media (max-width: 767px) { ... }
+
+      'small': {'max': '639px'},
+      // => @media (max-width: 639px) { ... }
     },
   },
   variants: {
