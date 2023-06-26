@@ -33,15 +33,14 @@ function getTimeLeft(currentTime) {
 }
 
 function displayTime(time) {
-    const { t } = useTranslation(["deadline"]);
     let month = '';
     if (time.getMonth() > 0) {
-        month = `${time.getMonth()} ${t("month")}${time.getMonth() > 1 ? 's' : ''}`;
+        month = `${time.getMonth()} month${time.getMonth() > 1 ? 's' : ''}`;
     } 
 
     let day = '';
     if (time.getDate() > 0) {
-        day = `${time.getDate()} ${t("day")}${time.getDate() > 1 ? 's' : ''}`;
+        day = `${time.getDate()} day${time.getDate() > 1 ? 's' : ''}`;
     }
 
     return month + ' ' + day + ' ' + time.toLocaleTimeString('it-IT');
@@ -68,7 +67,7 @@ export default function Countdown() {
     return (
         <>
         {showBanner && (
-            <div id="sticky-banner" tabIndex="-1" className="fixed top-0 left-0 z-50 flex justify-between w-full pt-1 px-3 border-b border-gray-200 bg-green-100 text-black-100">
+            <div id="sticky-banner" tabIndex="-1" className="fixed top-0 left-0 z-50 flex justify-between w-full py-[0.5px] px-3 border-b border-gray-200 bg-green-100 text-black-100">
                 <div className="flex items-center mx-auto">
                     <div className="flex items-center text-[11px] sm:text-[14px] text-black-100">
                         <span className="inline-flex mr-2">

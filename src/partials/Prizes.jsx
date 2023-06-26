@@ -68,7 +68,7 @@ function Prizes() {
             */}
             <h1 className='h1 text-green-100 mb-10'>{t("prizes")}</h1>
             <div className='flex flex-col sm:flex-row items-center  justify-between gap-y-8 data-tilt'>
-                <div className="prize h-[280px] sm:h-[340px] aspect-[8/10] lg:h-[500px] relative flex justify-center items-center">
+                <div className="prize h-[280px] sm:h-[340px] aspect-[8/10] lg:h-[500px] relative flex justify-center items-center z-10">
                     <div className='absolute inset-0 h-full'>
                         <img className=' aspect-[8/10] h-full' src={prize} alt="" />
                     </div>

@@ -97,7 +97,7 @@ function HeroSection() {
     let themeDescriptionArr = t("themeDescription").split("<b>") 
 
     return (
-        <section className="relative bg-black-100 flex flex-col justify-center items-center mx-10">
+        <section className="relative bg-black-100 flex flex-col justify-center items-center">
 
             {/*   
                 Use the page content here, you only need to copy {t("<the content>")}:
@@ -114,7 +114,7 @@ function HeroSection() {
                     <p className="mb-6 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48">{t("description")}</p>
                 </div>
             </div>
-            <div className='flex justify-center items-center flex-col w-full text-center'>
+            <div className='flex justify-center items-center flex-col w-full text-center mx-10'>
                 <h1 className='mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("beNext")}</h1>
                 <p className="mb-6 text-lg font-normal text-white lg:text-xl">
                     {themeDescriptionArr.map((part, index) => {

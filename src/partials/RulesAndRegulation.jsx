@@ -26,15 +26,17 @@ function RulesAndRegulation() {
                 <img className='w-full object-cover z-0 translate-y-2' src={transitionImg} alt="layered wave transition" />
             </div>
             {/* Rules and regulation */}
-            <div className='relative w-full bg-white p-12 flex justify-center flex-col gap-10 z-10'>
-                <h1 className='h1 text-black-100 text-2xl sm:text-4xl md:text-[64px] font-bold text-center'>{t("rulesAndRegulations")}</h1>
-                <Badge index={1}>{t("openToAll")}</Badge>
-                <Badge index={2}>{t("teamMembersFromDifferentSchools")}</Badge>
-                <Badge index={3}>{t("submissionDeadline")}</Badge>
-                <Badge index={4}>{t("submittedEntriesProperty")}</Badge>
-                <Badge index={5}>{t("photographsAndVideos")}</Badge>
-                <Badge index={6}>{t("decisionsOfJudges")}</Badge>
-                <Badge index={7}>{t("subjectToChange")}</Badge>
+            <div className='bg-gray-100'>
+                <div className='py-12 flex justify-center flex-col gap-10 content'>
+                    <h1 className='h1 text-black-100 text-2xl sm:text-4xl md:text-[64px] font-bold text-center'>{t("rulesAndRegulations")}</h1>
+                    <Badge index={1}>{t("openToAll")}</Badge>
+                    <Badge index={2}>{t("teamMembersFromDifferentSchools")}</Badge>
+                    <Badge index={3}>{t("submissionDeadline")}</Badge>
+                    <Badge index={4}>{t("submittedEntriesProperty")}</Badge>
+                    <Badge index={5}>{t("photographsAndVideos")}</Badge>
+                    <Badge index={6}>{t("decisionsOfJudges")}</Badge>
+                    <Badge index={7}>{t("subjectToChange")}</Badge>
+                </div>
             </div>
         </section>
     )
