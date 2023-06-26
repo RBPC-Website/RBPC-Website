@@ -17,9 +17,9 @@ function WhoCanEnter() {
             {/* Card Section */}
             <div className='relative w-full bg-white pt-12 xl:px-[200px] md:px-[60px] px-[40px] rounded-t-[24px]'>
                 {/* Who Can Enter Title */}
-                <h1 className='h1 text-black-100 text-center'>{t("whoCanEnter")}?</h1>
+                <h1 className='h1 text-black-100 text-center' data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("whoCanEnter")}?</h1>
                 {/* Description */}
-                <p className='p text-center mt-7'>{t("description")}</p>
+                <p className='p text-center mt-7' data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("description")}</p>
             </div>
             {/* Wave transition */}
             <div className='w-full bg-white -mt-1 border-2 border-l-green-100 border-t-0 border-r-0 border-b-0'>
