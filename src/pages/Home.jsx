@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../partials/Header';
+import Countdown from '../utils/Countdown';
 import AreaOfFocus from '../partials/AreaOfFocus';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
 import JudgingCriteria from '../partials/JudgingCriteria';
@@ -17,6 +18,7 @@ function Home() {
     <div className="flex flex-col min-h-screen overflow-hidden">
 
       {/*  Site header */}
+      <Countdown />
       <Header />
 
       {/*  Page content */}

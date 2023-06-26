@@ -109,43 +109,43 @@ const AreaOfFocusComponent = () => {
         switch (activeCard) {
             case "tourismHospitality":
                 return (
-                    <div className="w-11/12">
-                        <h1 className='mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("tourismHospitality.subTheme")}</h1>
-                        <p className="text-xl text-white">{t("tourismHospitality.description")}</p>
+                    <div className="w-11/12 mb-10">
+                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("tourismHospitality.subTheme")}</h1>
+                        <p className="my-10 text-xl text-white">{t("tourismHospitality.description")}</p>
                     </div>
                 );
             case "digitalMarketing":
                 return (
-                    <div className="w-11/12">
-                        <h1 className='mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("digitalMarketing.subTheme")}</h1>
-                        <p className="text-xl text-white">{t("digitalMarketing.description")}</p>
+                    <div className="w-11/12 mb-10">
+                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("digitalMarketing.subTheme")}</h1>
+                        <p className="my-10 text-xl text-white">{t("digitalMarketing.description")}</p>
                     </div>
                 );
             case "businessTechnology":
                 return (
-                    <div className="w-11/12">
-                        <h1 className='mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("businessTechnology.subTheme")}</h1>
-                        <p className="text-xl text-white">{t("businessTechnology.description")}</p>
+                    <div className="w-11/12 mb-10">
+                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("businessTechnology.subTheme")}</h1>
+                        <p className="my-10 text-xl text-white">{t("businessTechnology.description")}</p>
                     </div>
                 );
             case "managementChange":
                 return (
-                    <div className="w-11/12">
-                        <h1 className='mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("managementChange.subTheme")}</h1>
-                        <p className="text-xl text-white">{t("managementChange.description")}</p>
+                    <div className="w-11/12 mb-10">
+                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("managementChange.subTheme")}</h1>
+                        <p className="my-10 text-xl text-white">{t("managementChange.description")}</p>
                     </div>
                 );
             case "economicsBlockchainFinance":
                 return (
-                    <div className="w-11/12">
-                        <h1 className='mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("economicsBlockchainFinance.subTheme")}</h1>
-                        <p className="text-xl text-white">{t("economicsBlockchainFinance.description")}</p>
+                    <div className="w-11/12 mb-10">
+                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("economicsBlockchainFinance.subTheme")}</h1>
+                        <p className="my-10 text-xl text-white">{t("economicsBlockchainFinance.description")}</p>
                     </div>
                 );
             default:
                 return (
-                    <div className="w-11/12">
-                        <h1 className='mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-white'>Please select and area of focus</h1>
+                    <div className="w-11/12 mb-10">
+                        <h4 className='h4 mt-10 font-bold leading-none tracking-tight text-white'>Please select an area of focus</h4>
                     </div>
                 );
         }
@@ -153,6 +153,9 @@ const AreaOfFocusComponent = () => {
 
     return (
         <div className='small:hidden'>
+            <div className='ml-10'>
+                {renderContent()}
+            </div>
             <div className="grid grid-cols-5 gap-4 medium:grid-cols-3 medium:gap-11 justify-items-center">
                 {renderAreaCard("tourismHospitality")}
                 {renderAreaCard("digitalMarketing")}
@@ -160,7 +163,6 @@ const AreaOfFocusComponent = () => {
                 {renderAreaCard("managementChange")}
                 {renderAreaCard("economicsBlockchainFinance")}
             </div>
-            {renderContent()}
         </div>
     )
 }
@@ -170,7 +172,7 @@ function AreaOfFocus() {
     const { t } = useTranslation(["area-of-focus"]);
 
     return (
-        <section className="relative bg-black-100">
+        <section className="relative bg-black-100 mb-20">
             {/*   
                 Use the page content here, you only need to copy {t("<the content>")}:
 
@@ -200,7 +202,7 @@ function AreaOfFocus() {
                     Description: {t("managementChange.description")}
             */}
             <div className="w-11/12">
-                <h1 className='mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>Area Of Focus</h1>
+                <h1 className='ml-10 mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
             </div>
             <AreaOfFocusComponent />
         </section>

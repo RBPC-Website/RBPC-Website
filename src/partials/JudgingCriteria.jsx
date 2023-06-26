@@ -8,7 +8,7 @@ import Card from '../utils/Card';
 function JudgingCriteria() {
     const { t } = useTranslation(["judging-criteria"]);
 
-    const textStyle = 'absolute font-medium text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-pre-line';
+    const textStyle = 'absolute font-medium text-xs sm:text-lg md:text-xl lg:text-2xl whitespace-pre-line w-2/5';
 
     const strokeWidth = 1;
 
@@ -37,7 +37,7 @@ function JudgingCriteria() {
                     <img className='w-full' src={jcNetwork} alt="Judging criteria network image" />
 
                     {/* Header (This havent had translation yet) */}
-                    <h1 className='absolute uppercase left-[4%] top-[33%] lg:top-[36%] font-bold text-green-100 whitespace-pre-line leading-[110%] w-56 md:text-5xl lg:text-[64px]'>Judging Criteria</h1>
+                    <h1 className='absolute uppercase left-[4%] top-[33%] lg:top-[36%] font-bold text-green-100 whitespace-pre-line leading-[110%] w-56 md:text-5xl lg:text-[64px]'>{t("judgingCriteria")}</h1>
 
                     {/* Contents */}
                     <p className={`${textStyle} left-[38%] -top-[3%]`}>{t("problemSolvingApproach")}</p>

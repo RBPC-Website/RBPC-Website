@@ -8,5 +8,9 @@
     "Finalist" : "Finalist announcement",
     "Mentoring" : "Mentoring meetup and private training workshops",
     "FinalWorkshop" : "Workshop for finalists",
-    "FinalRound" : "Project pitching and winner entitlement"
+    "FinalRound" : "Project pitching and winner entitlement",
+    "willStartIn": "will start in",
+    "month": "month",
+    "day": "day",
+    "s": "s"
 }
