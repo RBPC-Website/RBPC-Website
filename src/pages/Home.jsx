@@ -8,7 +8,6 @@ import FeaturesBlocks from '../partials-template/FeaturesBlocks';
 import Testimonials from '../partials-template/Testimonials';
 import Newsletter from '../partials-template/Newsletter';
 import RulesAndRegulation from '../partials/RulesAndRegulation';
-import Footer from '../partials-template/Footer';
 import JudgingCriteria from '../partials/JudgingCriteria';
 import WhoCanEnter from '../partials/WhoCanEnter';
 import Timeline from '../partials/Timeline';
