@@ -79,7 +79,7 @@ function Prizes() {
                         <p className='p text-gray-200'>{t('teamMembers')}</p>
                     </div>
                 </div>
-                <div className="w-full sm:w-[50%] h-[340px] lg:h-[500px] flex flex-col justify-between">
+                <div className="w-full sm:w-[50%] sm:max-w-[520px] h-[340px] lg:h-[500px] flex flex-col justify-between">
                     {oddPrize(prize2, t("secondPrize"), 30, t('quantity'))}
                     {evenPrize(prize3, t("thirdPrize"), 20, t('quantity'))}
                     {oddPrize(prize2, t("encouragementPrizes"), 11, t('quantity'))}
