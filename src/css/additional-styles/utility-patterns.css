@@ -13,7 +13,7 @@
 
 /* Typography */
 .h1 {
-    @apply lg:text-7xl sm:text-5xl text-4xl font-extrabold leading-tight tracking-tighter;
+    @apply lg:text-[64px] sm:text-5xl text-4xl font-extrabold leading-tight tracking-tighter;
 }
 
 .h2 {
@@ -37,7 +37,11 @@
 }
 
 .content {
-    @apply lg:max-w-[1100px] md:w-[85%] w-[90%]  mx-auto;
+    @apply max-w-[1100px] md:w-[82%] w-[90%]  mx-auto;
+}
+
+.area:hover img {
+    @apply scale-105 duration-300;
 }
 
 .area:hover img {

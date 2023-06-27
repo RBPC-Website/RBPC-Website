@@ -33,15 +33,14 @@ function getTimeLeft(currentTime) {
 }
 
 function displayTime(time) {
-    const { t } = useTranslation(["deadline"]);
     let month = '';
     if (time.getMonth() > 0) {
-        month = `${time.getMonth()} ${t("month")}${time.getMonth() > 1 ? 's' : ''}`;
+        month = `${time.getMonth()} month${time.getMonth() > 1 ? 's' : ''}`;
     } 
 
     let day = '';
     if (time.getDate() > 0) {
-        day = `${time.getDate()} ${t("day")}${time.getDate() > 1 ? 's' : ''}`;
+        day = `${time.getDate()} day${time.getDate() > 1 ? 's' : ''}`;
     }
 
     return month + ' ' + day + ' ' + time.toLocaleTimeString('it-IT');
