@@ -33,7 +33,7 @@
 }
 
 .p {
-    @apply md:text-lg text-base leading-tight tracking-tight;
+    @apply md:text-lg text-base leading-tight tracking-tight text-gray-200;
 }
 
 .content {

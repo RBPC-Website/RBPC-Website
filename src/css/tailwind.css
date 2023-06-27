@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
@@ -11,6 +12,7 @@
 @import 'additional-styles/blob.css';
 @import 'additional-styles/timeline.css';
 @import 'additional-styles/scroll-bar.css';
+@import 'additional-styles/accordion.css';
 
 @import 'tailwindcss/utilities';
 
