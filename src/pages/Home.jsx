@@ -19,21 +19,20 @@ function Home() {
     <div className="flex flex-col min-h-screen overflow-hidden">
 
       {/*  Site header */}
-      {/* <Countdown />
-      <Header /> */}
+      <Countdown />
+      <Header />
 
       {/*  Page content */}
       <main className="flex-grow bg-black-100 text-gray-100">
-      {/* <GlowingBlob /> */}
-        <AreaOfFocus />
+      <GlowingBlob />
         {/*  Page sections */}
-        {/* <HeroSection />
+        <HeroSection />
         <AreaOfFocus />
         <Prize />
         <WhoCanEnter />
         <Timeline />
         <JudgingCriteria />
-        <RulesAndRegulation /> */}
+        <RulesAndRegulation />
       </main>
 
       {/*  Site footer */}

@@ -44,10 +44,6 @@
     @apply scale-105 duration-300;
 }
 
-.area:hover img {
-    @apply scale-105 duration-300;
-}
-
 /* @screen sm {
     .h1 {
         @apply text-5xl;
