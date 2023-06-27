@@ -16,7 +16,7 @@ function getArea(area) {
     const {t} = useTranslation(["area-of-focus"]);
     return (
         <div>
-            <h3 className='h3 mb-4 text-gray-100'>{t(area + ".subTheme")}</h3>
+            <h2 className='h2 mb-4 text-gray-100'>{t(area + ".subTheme")}</h2>
             <p className='text-gray-200 p'>{t(area + ".description")}</p>
         </div>
     )
