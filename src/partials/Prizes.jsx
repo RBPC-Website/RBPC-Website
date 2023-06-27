@@ -8,7 +8,7 @@ import VanillaTilt from 'vanilla-tilt';
 
 function oddPrize(src, type, value, quantity) {
     return (
-        <div className='w-full h-[24%]'> 
+        <div className='w-full h-[24%]' data-aos="flip-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom"> 
             <div className="h-full aspect-[19/6] float-left relative flex justify-start items-center mb-1">
                 <div className='absolute inset-0'>
                     <img className='h-full w-full' src={src} alt="" />
@@ -24,7 +24,7 @@ function oddPrize(src, type, value, quantity) {
 
 function evenPrize(src, type, value, quantity) {
     return (
-        <div className='w-full h-[24%]'>
+        <div className='w-full h-[24%]' data-aos="flip-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top">
             <div className="h-full aspect-[19/6] float-right relative flex justify-end items-center mb-1">
                 <div className='absolute inset-0'>
                     <img className='h-full w-full' src={src} alt="" />
@@ -70,10 +70,10 @@ function Prizes() {
                 <h1 className='h1 text-green-100 mb-10'>{t("prizes")}</h1>
                 <div className='flex flex-col sm:flex-row items-center  justify-between gap-y-8 data-tilt'>
                     <div className="prize h-[280px] sm:h-[340px] aspect-[8/10] lg:h-[500px] relative flex justify-center items-center z-10">
-                        <div className='absolute inset-0 h-full'>
+                        <div className='absolute inset-0 h-full' data-aos="flip-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
                             <img className=' aspect-[8/10] h-full' src={prize} alt="" />
                         </div>
-                        <div className="flex flex-col z-10">
+                        <div className="flex flex-col z-10" data-aos="flip-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
                             <h3 className='h3 test text-green-100 text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200'>45 {t('quantity')}</h3>
                             <span className='h4 text-gray-100'>VND</span>
                             <h3 className='h3 mt-2'>{t("firstPrize")}</h3>
