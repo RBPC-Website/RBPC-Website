@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="content">
             <hr className="border-gray-200" />
             <div className="bg-gray-100 flex flex-wrap items-center justify-between gap-4 py-6">
-                <div className="flex flex-col items-start gap-2 w-[40%] min-w-[270px]">
+                <div className="flex flex-col items-center sm:items-start gap-2 w-full sm:w-[50%] sm:min-w-[270px]">
                     <a className="text-gray-500 hover:text-black-100 hover:underline flex items-center justify-between gap-2">
                         <span className="flex justify-center items-center text-gray-500 hover:text-black-100 bg-gray-100 hover:bg-white-100 p-2 rounded-full shadow transition duration-150 ease-in-out">
                             <svg className="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -28,7 +28,7 @@ export default function Footer() {
                     </a>
                 </div>
                 {/* Facebook */}   
-                <div className="flex-1 min-w-[280px] max-w-[340px] flex justify-end">
+                <div className="flex-1 min-w-[280px] max-w-[340px] flex justify-end mx-auto">
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frmit.rbpc&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" allowFullScreen={true} width={'100%'} height={'70px'} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>
