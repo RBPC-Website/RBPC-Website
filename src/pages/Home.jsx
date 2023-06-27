@@ -21,7 +21,7 @@ function Home() {
       {/*  Site header */}
       <Countdown />
       <Header />
-
+    
       {/*  Page content */}
       <main className="flex-grow bg-black-100 text-gray-100">
       <GlowingBlob />
