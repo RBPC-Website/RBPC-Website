@@ -33,11 +33,15 @@
 }
 
 .p {
-    @apply lg:text-xl md:text-lg text-base leading-tight tracking-tight text-gray-200;
+    @apply md:text-lg text-base leading-tight tracking-tight;
 }
 
 .content {
     @apply lg:max-w-[1100px] md:w-[85%] w-[90%]  mx-auto;
+}
+
+.area:hover img {
+    @apply scale-105 duration-300;
 }
 
 /* @screen sm {
