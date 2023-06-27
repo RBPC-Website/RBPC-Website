@@ -32,7 +32,7 @@ function PanelOfJudges() {
     if (window.innerWidth <= 640) { // sm
       setCardsPerView(1)
     } else if (window.innerWidth <= 768) { // md
-      setCardsPerView(2)
+      setCardsPerView(3)
     } else if (window.innerWidth <= 1024) { // lg
       setCardsPerView(3)
     } else setCardsPerView(4)
@@ -47,7 +47,7 @@ function PanelOfJudges() {
       <h2 className="text-[68px] text-left font-extrabold text-[#00FFA8]">
         Panel of Judges
       </h2>
-      <div className="w-full h-full judges-slides relative my-10">
+      <div className="w-full h-3/4 judges-slides relative my-10">
         <Swiper
           modules={[Pagination]}
           onSlideChange={(swiper) => {
@@ -124,7 +124,7 @@ function PanelOfJudges() {
           </div>
 
           {/* Dot pages */}
-          <div className="flex flex-wrap -mx-2">
+          <div className="flex flex-wrap -mx-2 gap-2">
             {dots?.map((dot, idx) => (
               <div key={idx} className="px-2">
                 <div
