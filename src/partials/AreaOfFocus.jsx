@@ -85,7 +85,7 @@ export default function AreaOfFocus() {
                     {
                         Object.keys(areas).map((a, index) => {
                             return (
-                                <div key={a} onClick={() => setArea(a)} className={`relative z-10 area w-[19.3%] aspect-[84/110] pb-2 border rounded-2xl lg:rounded-3xl hover:border-green-100 duration-300 ${a==area ? active : inactive}`}>
+                                <div key={a} onClick={() => setArea(a)} className={`relative z-10 area w-[19.3%] aspect-[84/105] pb-2 border rounded-2xl lg:rounded-3xl hover:border-green-100 duration-300 ${a==area ? active : inactive}`}>
                                     <img className='mx-auto w-[70%] aspect-square text-black-100' src={a==area ? areas[a].active : areas[a].inactive} alt={t(a + ".major")} />
                                     <div className='text-center px-2 font-medium'>
                                         <p className='text-xs lg:text-base font-semibold'>{t(a + ".major")}</p>
