@@ -12,201 +12,151 @@ import Active_Management_ChangeSVG from "../images/active_management_change.svg"
 import economicsBlockchainFinanceSVG from "../images/economics_blockchain.svg";
 import Active_economicsBlockchainFinanceSVG from "../images/active_economics_blockchain.svg";
 
-const AreaCard = ({ major, onClick, className, textStyle, isActive }) => {
-    const { t } = useTranslation(["area-of-focus"])
-    let svgComponent
+function getArea(area) {
+    const {t} = useTranslation(["area-of-focus"]);
+    return (
+        <div>
+            <h2 className='h2 mb-4 text-gray-100'>{t(area + ".subTheme")}</h2>
+            <p className='text-gray-200 p'>{t(area + ".description")}</p>
+        </div>
+    )
 
-    switch (major) {
-        case "tourismHospitality":
-            svgComponent = isActive ? (
-                <img src={Active_Tourism_HospitalitySVG} alt={t(major + ".major")} />
-            ) : (
-                <img src={Tourism_HospitalitySVG} alt={t(major + ".major")} />
-            ) 
-            break
-        case "digitalMarketing":
-            svgComponent = isActive ? (
-                <img src={Active_Digital_MarketingSVG} alt={t(major + ".major")} />
-            ) : (
-                <img src={Digital_MarketingSVG} alt={t(major + ".major")} />
-            ) 
-            break
-        case "businessTechnology":
-            svgComponent = isActive ? (
-                <img src={Active_Business_TechnologygSVG} alt={t(major + ".major")} />
-            ) : (
-                <img src={Business_TechnologygSVG} alt={t(major + ".major")} />
-            )
-            break
-        case "managementChange":
-            svgComponent = isActive ? (
-                <img src={Active_Management_ChangeSVG} alt={t(major + ".major")} />
-            ) : (
-                <img src={Management_ChangeSVG} alt={t(major + ".major")} />
-            ) 
-            break
-        case "economicsBlockchainFinance":
-            svgComponent = isActive ? (
-                <img src={Active_economicsBlockchainFinanceSVG} alt={t(major + ".major")} />
-            ) : (
-                <img src={economicsBlockchainFinanceSVG} alt={t(major + ".major")} />
-            ) 
-            break
-        default:
-            svgComponent = null
-            break
+}
+
+
+export default function AreaOfFocus() {
+    const {t} = useTranslation(["area-of-focus"]);
+    const [area, setArea] = useState("tourismHospitality");
+    const active = "border-green-100 bg-green-100 text-black-100";
+    const inactive = "border-gray-200 text-gray-100";
+
+    const areas = {
+        "tourismHospitality": {active: Active_Tourism_HospitalitySVG, inactive: Tourism_HospitalitySVG},
+        "digitalMarketing": {active: Active_Digital_MarketingSVG, inactive: Digital_MarketingSVG},
+        "businessTechnology": {active: Active_Business_TechnologygSVG, inactive: Business_TechnologygSVG},
+        "managementChange": {active: Active_Management_ChangeSVG, inactive: Management_ChangeSVG},
+        "economicsBlockchainFinance": {active: Active_economicsBlockchainFinanceSVG, inactive: economicsBlockchainFinanceSVG}
     }
-    return (
-        <div 
-            className={`bg-[#000000] text-center rounded-2xl border border-solid border-white w-48 flex flex-col item-center cursor-pointer hover:scale-110 ${className}`}
-            onClick={() => onClick(major)}
-        >
-            {svgComponent}
-            <p className='text-md my-3 mx-4' style={textStyle}>{t(major + ".major")}</p>
-        </div>
-    )
-}
 
-const AreaOfFocusComponent = () => {
-    const { t } = useTranslation(["area-of-focus"])
-    const [activeCard, setActiveCard] = useState(null);
+    useEffect(() => {
 
-    const handleCardClick = (card) => {
-        setActiveCard(card);
-    };
+    }, [area])
 
-    const renderAreaCard = (major) => {
-        const isActive = activeCard === major;
-        const cardStyle = isActive ? "bg-[#00FFA8]" : "";
-        
-        const textStyle = {
-            color: isActive ? "black" : "white",
-        };
+    useEffect(() => {
+        const accordionContent = document.querySelectorAll(".accordion-content");
 
-        const activeSVG = {
-            tourismHospitality: Active_Tourism_HospitalitySVG,
-            digitalMarketing: Active_Digital_MarketingSVG,
-            businessTechnology: Active_Business_TechnologygSVG,
-            managementChange: Active_Management_ChangeSVG,
-            economicsBlockchainFinance: Active_economicsBlockchainFinanceSVG,
+        accordionContent.forEach((item, index) => {
+            let header = item.querySelector("header");
+            header.addEventListener("click", () =>{
+                item.classList.toggle("open");
+
+                let description = item.querySelector(".description");
+                if(item.classList.contains("open")){
+                    description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
+                    item.querySelector("i").classList.replace("fa-plus", "fa-minus");
+                }else{
+                    description.style.height = "0px";
+                    item.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                }
+                removeOpen(index); //calling the funtion and also passing the index number of the clicked header
+            })
+        })
+
+        function removeOpen(index1){
+            accordionContent.forEach((item2, index2) => {
+                if(index1 != index2){
+                    item2.classList.remove("open");
+
+                    let des = item2.querySelector(".description");
+                    des.style.height = "0px";
+                    item2.querySelector("i").classList.replace("fa-minus", "fa-plus");
+                }
+            })
         }
-
-        return (
-            <AreaCard
-                key={major}
-                major={major}
-                onClick={handleCardClick}
-                className={cardStyle}
-                textStyle={textStyle}
-                isActive={isActive}
-            />
-
-
-        );
-    };
-
-    const renderContent = () => {
-        switch (activeCard) {
-            case "tourismHospitality":
-                return (
-                    <div className="w-11/12 mb-10">
-                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("tourismHospitality.subTheme")}</h1>
-                        <p className="my-10 text-xl text-white">{t("tourismHospitality.description")}</p>
-                    </div>
-                );
-            case "digitalMarketing":
-                return (
-                    <div className="w-11/12 mb-10">
-                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("digitalMarketing.subTheme")}</h1>
-                        <p className="my-10 text-xl text-white">{t("digitalMarketing.description")}</p>
-                    </div>
-                );
-            case "businessTechnology":
-                return (
-                    <div className="w-11/12 mb-10">
-                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("businessTechnology.subTheme")}</h1>
-                        <p className="my-10 text-xl text-white">{t("businessTechnology.description")}</p>
-                    </div>
-                );
-            case "managementChange":
-                return (
-                    <div className="w-11/12 mb-10">
-                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("managementChange.subTheme")}</h1>
-                        <p className="my-10 text-xl text-white">{t("managementChange.description")}</p>
-                    </div>
-                );
-            case "economicsBlockchainFinance":
-                return (
-                    <div className="w-11/12 mb-10">
-                        <h1 className='mt-10 text-4xl font-extrabold leading-none tracking-tight text-white'>{t("economicsBlockchainFinance.subTheme")}</h1>
-                        <p className="my-10 text-xl text-white">{t("economicsBlockchainFinance.description")}</p>
-                    </div>
-                );
-            default:
-                return (
-                    <div className="w-11/12 mb-10">
-                        <h4 className='h4 mt-10 font-bold leading-none tracking-tight text-white'>Please select an area of focus</h4>
-                    </div>
-                );
-        }
-    };
+    })
 
     return (
-        <div className='relative small:hidden z-10'>
-            <div className='ml-10'>
-                {renderContent()}
+        <section className='relative bg-black-100 mb-20'>
+            <div className='content md:block hidden'>
+                <div className="w-11/12">
+                    <h1 className=' mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
+                </div>
+                <div className='flex justify-between mb-12 flex-wrap'>
+                    {
+                        Object.keys(areas).map((a, index) => {
+                            return (
+                                <div key={a} onClick={() => setArea(a)} className={`relative z-10 area w-[19.3%] aspect-[84/105] pb-2 border rounded-2xl lg:rounded-3xl hover:border-green-100 duration-300 ${a==area ? active : inactive}`}>
+                                    <img className='mx-auto w-[70%] aspect-square text-black-100' src={a==area ? areas[a].active : areas[a].inactive} alt={t(a + ".major")} />
+                                    <div className='text-center px-2 font-medium'>
+                                        <p className='text-xs lg:text-base font-semibold'>{t(a + ".major")}</p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                {getArea(area)}
             </div>
-            <div className="grid grid-cols-5 gap-4 medium:grid-cols-3 medium:gap-11 justify-items-center">
-                {renderAreaCard("tourismHospitality")}
-                {renderAreaCard("digitalMarketing")}
-                {renderAreaCard("businessTechnology")}
-                {renderAreaCard("managementChange")}
-                {renderAreaCard("economicsBlockchainFinance")}
+            <div className="accordion md:hidden block">
+                <h1 className=' mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
             </div>
-        </div>
-    )
-}
+            <div className="accordion md:hidden block relative z-10">
+                <div className="accordion-content">
+                    <header className='px-[15px] pb-[15px]'>
+                        <span className="title h3 ">{t("tourismHospitality.major")}</span>
+                        <i className="fa-solid fa-plus"></i>
+                    </header>
 
+                    <div className="description">
+                        <h4 className='h4'>{t("tourismHospitality.subTheme")}</h4>
+                        <p className='p mt-[10px]'>{t("tourismHospitality.description")}</p>
+                    </div>
+                </div>
+                <div className="accordion-content">
+                    <header className='px-[15px] pb-[15px]'>
+                        <span className="title h3">{t("digitalMarketing.major")}</span>
+                        <i className="fa-solid fa-plus"></i>
+                    </header>
 
-function AreaOfFocus() {
-    const { t } = useTranslation(["area-of-focus"]);
+                    <div className="description">
+                        <h4 className='h4'>{t("digitalMarketing.subTheme")}</h4>
+                        <p className='p mt-[10px]'>{t("digitalMarketing.description")}</p>
+                    </div>
+                </div>
+                <div className="accordion-content">
+                    <header className='px-[15px] pb-[15px]'>
+                        <span className="title h3">{t("businessTechnology.major")}</span>
+                        <i className="fa-solid fa-plus"></i>
+                    </header>
 
-    return (
-        <section className="relative bg-black-100 mb-20">
-            {/*   
-                Use the page content here, you only need to copy {t("<the content>")}:
+                    <div className="description">
+                        <h4 className='h4'>{t("businessTechnology.subTheme")}</h4>
+                        <p className='p mt-[10px]'>{t("businessTechnology.description")}</p>
+                    </div>
+                </div>
+                <div className="accordion-content">
+                    <header className='px-[15px] pb-[15px]'>
+                        <span className="title h3">{t("managementChange.major")}</span>
+                        <i className="fa-solid fa-plus"></i>
+                    </header>
 
-                Digital Marketing:
-                    Major: {t("digitalMarketing.major")}
-                    Sub-Theme: {t("digitalMarketing.subTheme")}
-                    Description: {t("digitalMarketing.description")}
+                    <div className="description">
+                        <h4 className='h4'>{t("managementChange.subTheme")}</h4>
+                        <p className='p mt-[10px]'>{t("managementChange.description")}</p>
+                    </div>
+                </div>
+                <div className="accordion-content">
+                    <header className='px-[15px] pb-[15px]'>
+                        <span className="title h3 max-w-[90%]">{t("economicsBlockchainFinance.major")}</span>
+                        <i className="fa-solid fa-plus"></i>
+                    </header>
 
-                Tourism & Hospitality:
-                    Major: {t("tourismHospitality.major")}
-                    Sub-Theme: {t("tourismHospitality.subTheme")}
-                    Description: {t("tourismHospitality.description")}
-                
-                FinTech:
-                    Major: {t("economicsBlockchainFinance.major")}
-                    Sub-Theme: {t("economicsBlockchainFinance.subTheme")}
-                    Description: {t("economicsBlockchainFinance.description")}
-                
-                Business & Technology:
-                    Major: {t("businessTechnology.major")}
-                    Sub-Theme: {t("businessTechnology.subTheme")}
-                    Description: {t("businessTechnology.description")}
-                
-                Management & Change:
-                    Major: {t("managementChange.major")}
-                    Sub-Theme: {t("managementChange.subTheme")}
-                    Description: {t("managementChange.description")}
-            */}
-            <div className="w-11/12">
-                <h1 className='ml-10 mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
+                    <div className="description">
+                        <h4 className='h4'>{t("economicsBlockchainFinance.subTheme")}</h4>
+                        <p className='p mt-[10px]'>{t("economicsBlockchainFinance.description")}</p>
+                    </div>
+                </div>
             </div>
-            <AreaOfFocusComponent />
         </section>
     )
 }
-
-export default AreaOfFocus;

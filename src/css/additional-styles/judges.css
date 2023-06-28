@@ -1,0 +1,24 @@
+.swiper-button-next {
+    background-image: url(../images/right-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    z-index: 10;
+  }
+.swiper-button-prev {
+    background-image: url(../images/left-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+  }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+     /* display: none; */
+}
+.judges-slides {
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-theme-color: #fff;
+}
+.swiper-pagination {
+    position: relative!important;
+}

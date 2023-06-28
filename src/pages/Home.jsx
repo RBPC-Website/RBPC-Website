@@ -11,6 +11,8 @@ import Timeline from '../partials/Timeline';
 import Footer from '../partials/Footer';
 import Prize from '../partials/Prizes';
 import HeroSection from '../partials/HeroSection';
+import PanelOfJudges from '../partials/PanelOfJudges';
+import BackToTop from '../partials/BackToTop';
 
 
 function Home() {
@@ -21,19 +23,20 @@ function Home() {
       {/*  Site header */}
       <Countdown />
       <Header />
-
+    
       {/*  Page content */}
       <main className="flex-grow bg-black-100 text-gray-100">
       <GlowingBlob />
-      
         {/*  Page sections */}
         <HeroSection />
         <AreaOfFocus />
         <Prize />
         <WhoCanEnter />
         <Timeline />
+        <PanelOfJudges />
         <JudgingCriteria />
         <RulesAndRegulation />
+        <BackToTop />
       </main>
 
       {/*  Site footer */}
