@@ -37,7 +37,7 @@ function App() {
 
   return (
     <Suspense fallback={<LoadingAnimation />}>
-      <Home />
+      {/* <Home /> */}
       {/* <LoadingAnimation /> */}
       
      {/* Uncomment below for 2nd approach */}

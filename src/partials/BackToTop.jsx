@@ -29,7 +29,7 @@ const BackToTop = () => {
           behavior: "smooth",
         });
       }}
-      className={`w-8 h-8 p-2 rounded-full transform transition-all rotate-90 bg-green-100 fixed right-6 bottom-6 hover:cursor-pointer ${
+      className={`w-8 h-8 p-2 rounded-full transform transition-all z-10 rotate-90 bg-green-100 fixed right-6 bottom-6 hover:cursor-pointer ${
         isShowingBackToTopButton ? "opacity-100" : "opacity-0"
       }`}
     >
