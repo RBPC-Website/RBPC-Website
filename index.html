@@ -5,8 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RBPC</title>
+
+    <!-- Google Analytics script -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-406R4ESK4G"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-406R4ESK4G");
+    </script>
   </head>
-  <body class="font-inter antialiased bg-white text-gray-900 tracking-tight">
+  <body class="font-inter antialiased tracking-tight">
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
   </body>
