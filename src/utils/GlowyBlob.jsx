@@ -17,7 +17,7 @@ export default function GlowyBlob() {
     })
     return (
         <section>
-            <div id="blob"></div>
+            <div id="blob lg:block hidden"></div>
         </section>
     )
 }

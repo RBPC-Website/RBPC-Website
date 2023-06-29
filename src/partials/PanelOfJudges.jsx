@@ -26,7 +26,7 @@ function PanelOfJudges() {
   const [cardsPerView, setCardsPerView] = useState(2)
   const swiperRef = React.useRef(null);
   // I dont know how to get number of children so change this 5 to the total amount of judge we have
-  const dots = useMemo(() => new Array(calculateTotalPages(5, cardsPerView)).fill(0), [cardsPerView]);
+  const dots = useMemo(() => new Array(calculateTotalPages(7, cardsPerView)).fill(0), [cardsPerView]);
 
   function handleResize() {
     if (window.innerWidth <= 640) { // sm
@@ -39,12 +39,17 @@ function PanelOfJudges() {
   }
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize)
-  })
-
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [handleResize]);
+  
   return (
     <section className="relative bg-black-100 lg:px-20 md:px-20 -mt-1 px-7 pb-20">
-      <h2 className="text-[68px] text-left font-extrabold text-[#00FFA8]">
+      <h2 className="h1 text-left font-extrabold text-[#00FFA8]">
         Panel of Judges
       </h2>
       <div className="w-full h-3/4 judges-slides relative my-10">
@@ -113,18 +118,32 @@ function PanelOfJudges() {
               description={'Dean, School of Business and Management'} 
               school={'RMIT Vietnam'}/>
           </SwiperSlide>
+          <SwiperSlide>
+            <PoJCard 
+              cardImage={judge1}
+              name={'Professor Robert McClelland'} 
+              description={'Dean, School of Business and Management'} 
+              school={'RMIT Vietnam'}/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <PoJCard 
+              cardImage={judge1}
+              name={'Professor Robert McClelland'} 
+              description={'Dean, School of Business and Management'} 
+              school={'RMIT Vietnam'}/>
+          </SwiperSlide>
         </Swiper>
-        <div className="w-full flex mt-9 items-center justify-center">
+        <div className="w-full flex mt-9 items-center md:justify-center justify-between">
           {/* Left icon */}
           <div
             onClick={() => swiperRef?.current?.slidePrev?.()}
-            className="cursor-pointer hover:opacity-80 transition-all mr-10 w-8 h-8 flex items-center justify-center bg-white rounded-full p-1"
+            className="cursor-pointer hover:opacity-80 transition-all md:mr-10 mr-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2"
           >
             <img src={leftIcon} className="w-full h-full object-contain select-none" />
           </div>
 
           {/* Dot pages */}
-          <div className="flex flex-wrap -mx-2 gap-2">
+          <div className="flex flex-wrap -mx-2 gap-[2px]">
             {dots?.map((dot, idx) => (
               <div key={idx} className="px-2">
                 <div
@@ -142,7 +161,7 @@ function PanelOfJudges() {
           {/* Right icon */}
           <div
             onClick={() => swiperRef?.current?.slideNext?.()}
-            className="cursor-pointer hover:opacity-80  transition-all ml-10 w-8 h-8 flex items-center justify-center bg-white rounded-full p-1"
+            className="cursor-pointer hover:opacity-80 transition-all md:ml-10 ml-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2"
           >
             <img src={rightIcon} className="w-full h-full object-contain select-none" />
           </div>
