@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 import Countdown from '../utils/Countdown';
+import { Dropdown } from 'flowbite-react';
 
+function navigate(section) {
+    window.scrollTo(0, document.getElementById(section).offsetTop)
+}
 function Header() {
 
   const { i18n, t } = useTranslation(["header"]);
@@ -14,9 +18,9 @@ function Header() {
     }
   }, []);
 
-  const handleLanguageChange = (e) => {
+  const handleLanguageChange = (language) => {
     // Perform any additional logic based on the selected language
-    i18n.changeLanguage(e.target.value);
+    i18n.changeLanguage(language);
 
     // Reload the window when change language
     // window.location.reload();
@@ -67,29 +71,26 @@ function Header() {
 
           {/* Site navigation */}
           <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center">
+            <ul className="flex flex-grow justify-end flex-wrap items-center gap-3">
               <li>
-                <select
-                  className={`relative appearance-none rounded-md border-none font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-1 ease-in-out ${!top ? 'bg-transparent' : ''}`}
-                  value={localStorage.getItem('i18nextLng')}
-                  onChange={handleLanguageChange}
-                >
-                  <option
-                    className='text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'
-                    value="en"
-                  >
-                    English
-                  </option>
-                  <option
-                    className='text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'
-                    value="vi"
-                  >
-                    Tiếng Việt
-                  </option>
-                </select>
+                <Dropdown color={'light'} label={localStorage.getItem('i18nextLng') == 'vi' ? 'Tiếng Việt' : "English"}>
+                    <Dropdown.Item onClick={() => handleLanguageChange('en')}>English</Dropdown.Item>
+                    <Dropdown.Item onClick={() => handleLanguageChange('vi')}>Tiếng Việt</Dropdown.Item>
+                </Dropdown>
               </li>
               <li>
-                <Link to="/" className={`font-bold px-5 py-3 flex items-center transition duration-150 ease-in-out ${!top ? 'text-gray-600 hover:text-gray-900 font-medium' : 'text-green-100 hover:text-gray-100'}`}>{t("home")}</Link>
+                <Dropdown label={t('explore')} color='light'>
+                    {
+                        ["areaOfFocus", 'prizes', 'timeline', 'judges', 'rules'].map(section => {
+                            return (
+                                <Dropdown.Item onClick={() => navigate(section)}>{t(section)}</Dropdown.Item>
+                            )
+                        })
+                    }
+                </Dropdown>
+              </li>
+              <li>
+                <Link to="/" className={`font-bold flex items-center transition duration-150 ease-in-out hover:underline ${!top ? 'text-gray-600 hover:text-gray-900 font-medium' : 'text-green-100 hover:text-gray-100'}`}>{t("register")}</Link>
               </li>
             </ul>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../partials/Header';
+import Header from '../partials/HeaderNew';
 import GlowingBlob from '../utils/GlowyBlob';
 import Countdown from '../utils/Countdown';
 import AreaOfFocus from '../partials/AreaOfFocus';
