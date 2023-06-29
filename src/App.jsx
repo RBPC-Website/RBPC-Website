@@ -25,16 +25,6 @@ function App() {
     document.querySelector('html').style.scrollBehavior = '';
   }, [location.pathname]); // triggered on route change
 
-  useEffect(() => {
-    // Simulate loading process
-    const loadingTimeout = setTimeout(() => {
-      setIsLoadingComplete(true);
-    }, 7450);
-
-    // Clean up the timeout on component unmount
-    return () => clearTimeout(loadingTimeout);
-  }, []);
-
   return (
     <Suspense fallback={<LoadingAnimation />}>
       <Home />
