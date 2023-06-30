@@ -7,7 +7,7 @@ function Sponsorship() {
   const { t } = useTranslation(["sponsorship"]);
 
   return (
-    <section className="relative">
+    <section className="content relative mb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Media Sponsor */}
