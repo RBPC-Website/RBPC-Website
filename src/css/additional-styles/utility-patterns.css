@@ -37,7 +37,7 @@
 }
 
 .content {
-    @apply max-w-[1100px] md:w-[82%] w-[90%]  mx-auto;
+    @apply max-w-[1100px] md:w-[82%] w-[85%]  mx-auto;
 }
 
 .area:hover img {

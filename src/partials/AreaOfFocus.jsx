@@ -16,7 +16,7 @@ function getArea(area) {
     const {t} = useTranslation(["area-of-focus"]);
     return (
         <div>
-            <h2 className='h2 mb-4 text-gray-100'>{t(area + ".subTheme")}</h2>
+            <h3 className='h3 mb-4 text-gray-100'>{t(area + ".subTheme")}</h3>
             <p className='text-gray-200 p'>{t(area + ".description")}</p>
         </div>
     )
@@ -79,7 +79,7 @@ export default function AreaOfFocus() {
         <section id="areaOfFocus" className='relative bg-black-100 mb-20'>
             <div className='content md:block hidden'>
                 <div className="w-11/12">
-                    <h1 className=' mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
+                    <h1 className=' mt-24 mb-10 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
                 </div>
                 <div className='flex justify-between mb-12 flex-wrap'>
                     {
@@ -97,7 +97,7 @@ export default function AreaOfFocus() {
                 </div>
                 {getArea(area)}
             </div>
-            <div className="accordion md:hidden block">
+            <div className="content accordion md:hidden block">
                 <h1 className=' mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
             </div>
             <div className="accordion md:hidden block relative z-10">

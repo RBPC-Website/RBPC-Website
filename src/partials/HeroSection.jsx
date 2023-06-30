@@ -35,7 +35,7 @@ const TypewriterTitle = () => {
     return (
         <h1
             ref={titleRef}
-            className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl "
+            className="content mb-4 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl "
         ></h1>
     );
 };
@@ -114,7 +114,7 @@ function HeroSection() {
                     <p className="mb-6 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48" data-aos="fade-up" data-aos-offset="200" data-aos-delay="2300" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">{t("description")}</p>
                 </div>
             </div>
-            <div className='flex justify-center items-center flex-col w-full text-center mx-10'>
+            <div className='content flex justify-center items-center flex-col w-full text-center mx-10'>
                 <h1 className='mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'  data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("beNext")}</h1>
                 <p className="mb-6 text-lg font-normal text-white lg:text-xl" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
                     {themeDescriptionArr.map((part, index) => {
