@@ -29,7 +29,7 @@ const BackToTop = () => {
           behavior: "smooth",
         });
       }}
-      className={`sm:flex flex-col hidden justify-center items-center w-12 aspect-square transform transition-all z-10 bg-green-100 opacity-70 text-black-100 fixed right-6 bottom-6 hover:cursor-pointer ${
+      className={`sm:flex flex-col hidden justify-center items-center w-12 aspect-square transform transition-all z-10 p-1 bg-green-100 opacity-70 text-black-100 fixed right-6 bottom-6 hover:cursor-pointer ${
         isShowingBackToTopButton ? "sm:flex" : "sm:hidden"
       }`}
     >
