@@ -137,13 +137,13 @@ function PanelOfJudges() {
           {/* Left icon */}
           <div
             onClick={() => swiperRef?.current?.slidePrev?.()}
-            className="cursor-pointer hover:opacity-80 transition-all md:mr-10 mr-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2"
+            className="cursor-pointer hover:opacity-80 transition-all md:mr-10 mr-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2 z-10"
           >
             <img src={leftIcon} className="w-full h-full object-contain select-none" />
           </div>
 
           {/* Dot pages */}
-          <div className="flex flex-wrap -mx-2 gap-[2px]">
+          <div className="flex flex-wrap -mx-2 gap-[2px] z-10">
             {dots?.map((dot, idx) => (
               <div key={idx} className="px-2">
                 <div
@@ -161,7 +161,7 @@ function PanelOfJudges() {
           {/* Right icon */}
           <div
             onClick={() => swiperRef?.current?.slideNext?.()}
-            className="cursor-pointer hover:opacity-80 transition-all md:ml-10 ml-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2"
+            className="cursor-pointer hover:opacity-80 transition-all md:ml-10 ml-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2 z-10"
           >
             <img src={rightIcon} className="w-full h-full object-contain select-none" />
           </div>
