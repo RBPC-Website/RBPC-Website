@@ -9,7 +9,7 @@ function RulesAndRegulation() {
     const { t } = useTranslation(["rules-regulation"]);
 
     return (
-        <section id="rules" className="relative bg-black-100">
+        <section id="rules" className="relative bg-black-100"  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
             {/*
                 Use the page content here, you only need to copy {t("<the content>")}:
                 {t("rulesAndRegulations")}

@@ -43,7 +43,7 @@ function Timeline() {
             <div className='content'>
                 <div className='phase-1 relative md:px-16 pl-12 py-12'>
                     {/* Phase Title */}
-                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4 align-middle' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4 align-middle' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         {t("preliminaryWorkshop")}
                     </h2>
                     {/* Phase button */}
@@ -51,17 +51,17 @@ function Timeline() {
                         <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
                     </div>
                     {/* Phase Contents */}
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminaryWorkshopDate")}</h4>
-                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("registrationAndSubmission")}</p>
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopQA")}</h4>
-                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopQADescription")}</p>
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminaryResultAnnouncement")}</h4>
-                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminaryResultAnnouncementDetail")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminaryWorkshopDate")}</h4>
+                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("registrationAndSubmission")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopQA")}</h4>
+                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopQADescription")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminaryResultAnnouncement")}</h4>
+                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminaryResultAnnouncementDetail")}</p>
                 </div>
                 {/* Phase 2 */}
                 <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-2 text-right md:px-16 pr-12 py-12'>
                     {/* Phase Title */}
-                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         {t("preliminarySemiFinal")}
                     </h2>
                     {/* Phase button */}
@@ -69,15 +69,15 @@ function Timeline() {
                         <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
                     </div>
                     {/* Phase Contents */}
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminarySemiFinalDate")}</h4>
-                    <p className='p pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("semiFinalSubmission")}</p>
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("finalistAnnouncement")}</h4>
-                    <p className='p pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("finalistAnnouncementDescription")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminarySemiFinalDate")}</h4>
+                    <p className='p pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("semiFinalSubmission")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("finalistAnnouncement")}</h4>
+                    <p className='p pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("finalistAnnouncementDescription")}</p>
                 </div>
                 {/* Phase 3 */}
                 <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-3 md:px-16 pl-12 py-12'>
                     {/* Phase Title */}
-                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         {t("mentoringWorkshops")}
                     </h2>
                     {/* Phase button */}
@@ -85,15 +85,15 @@ function Timeline() {
                         <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
                     </div>
                     {/* Phase Contents */}
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("mentoringWorkshopsDate")}</h4>
-                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("topFinalistsMeeting")}</p>
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopForFinalists")}</h4>
-                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopForFinalistsDescription")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("mentoringWorkshopsDate")}</h4>
+                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("topFinalistsMeeting")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopForFinalists")}</h4>
+                    <p className='p pb-4' data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopForFinalistsDescription")}</p>
                 </div>
                 {/* Phase 4 */}
                 <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-4 text-right md:px-16 pr-12 py-12'>
                     {/* Phase Title */}
-                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <h2 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h2 pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         {t("grandFinale")}
                     </h2>
                     {/* Phase button */}
@@ -101,8 +101,8 @@ function Timeline() {
                         <img className='w-full object-contain' src={timelineButton} alt='timeline point'></img>
                     </div>
                     {/* Phase Contents */}
-                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("grandFinaleDate")}</h4>
-                    <p className='p pb-4' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("grandFinalistsPitch")}</p>
+                    <h4 className='h4 text-white-100 pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("grandFinaleDate")}</h4>
+                    <p className='p pb-4' data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("grandFinalistsPitch")}</p>
                 </div>
             </div>
         </section>

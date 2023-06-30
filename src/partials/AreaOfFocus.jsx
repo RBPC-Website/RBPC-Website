@@ -76,7 +76,7 @@ export default function AreaOfFocus() {
     })
 
     return (
-        <section id="areaOfFocus" className='relative bg-black-100 mb-20'>
+        <section id="areaOfFocus" className='relative bg-black-100 mb-20'  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
             <div className='content md:block hidden'>
                 <div className="w-11/12">
                     <h1 className=' mt-24 mb-10 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
@@ -97,8 +97,8 @@ export default function AreaOfFocus() {
                 </div>
                 {getArea(area)}
             </div>
-            <div className="content accordion md:hidden block">
-                <h1 className=' mt-24 mb-8 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
+            <div className="content accordion md:hidden block mb-10">
+                <h1 className=' mt-24 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
             </div>
             <div className="accordion md:hidden block relative z-10">
                 <div className="accordion-content">

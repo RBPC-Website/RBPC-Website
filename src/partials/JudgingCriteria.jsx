@@ -13,7 +13,7 @@ function JudgingCriteria() {
     const strokeWidth = 1;
 
     return (
-        <section className="relative bg-black-100">
+        <section className="relative bg-black-100"  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
             {/*
                 Use the page content here, you only need to copy {t("<the content>")}:
                 
@@ -38,14 +38,14 @@ function JudgingCriteria() {
                         {/* Header (This havent had translation yet) */}
                         <h1 className='absolute uppercase left-[4%] top-[33%] lg:top-[36%] text-green-100 whitespace-pre-line leading-[110%] w-56 h1'>{t("judgingCriteria")}</h1>
                         {/* Contents */}
-                        <p className={`${textStyle} left-[38%] -top-[3%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("problemSolvingApproach")}</p>
-                        <p className={`${textStyle} left-[80%] top-[11%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("innovation")}</p>
-                        <p className={`${textStyle} left-[100%] top-[38%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("originality")}</p>
-                        <p className={`${textStyle} left-[98%] top-[66%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("feasibilityViability")}</p>
-                        <p className={`${textStyle} left-[40%] top-[100%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("marketPotential")}</p>
-                        <p className={`${textStyle} left-[76%] top-[89%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("socialEnvironmentalImpact")}</p>
-                        <p className={`${textStyle} left-[0%] top-[9%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("teamwork")}</p>
-                        <p className={`${textStyle} left-[39%] top-[68%]`} data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("overallPresentation")}</p>
+                        <p className={`${textStyle} left-[38%] -top-[3%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("problemSolvingApproach")}</p>
+                        <p className={`${textStyle} left-[80%] top-[11%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("innovation")}</p>
+                        <p className={`${textStyle} left-[100%] top-[38%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("originality")}</p>
+                        <p className={`${textStyle} left-[98%] top-[66%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("feasibilityViability")}</p>
+                        <p className={`${textStyle} left-[40%] top-[100%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("marketPotential")}</p>
+                        <p className={`${textStyle} left-[76%] top-[89%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("socialEnvironmentalImpact")}</p>
+                        <p className={`${textStyle} left-[0%] top-[9%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("teamwork")}</p>
+                        <p className={`${textStyle} left-[39%] top-[68%]`} data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("overallPresentation")}</p>
                     </div>
                     {/* For devices with width <= 768px */}
                     <div className='md:hidden'>

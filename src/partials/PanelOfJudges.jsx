@@ -48,7 +48,7 @@ function PanelOfJudges() {
   }, [handleResize]);
   
   return (
-    <section id="judges" className="relative bg-black-100 lg:px-20 md:px-20 -mt-1 px-7 pb-20">
+    <section id="judges" className="relative bg-black-100 lg:px-20 md:px-20 -mt-1 px-7 pb-20"  data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
       <h2 className="h1 text-left font-extrabold text-[#00FFA8]">
         Panel of Judges
       </h2>
