@@ -13,7 +13,7 @@
 
 /* Typography */
 .h1 {
-    @apply lg:text-[64px] sm:text-5xl text-4xl font-extrabold leading-tight tracking-tighter;
+    @apply lg:text-[56px] sm:text-5xl text-4xl font-extrabold leading-tight tracking-tighter;
 }
 
 .h2 {

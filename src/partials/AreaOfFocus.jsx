@@ -16,7 +16,7 @@ function getArea(area) {
     const {t} = useTranslation(["area-of-focus"]);
     return (
         <div>
-            <h3 className='h3 mb-4 text-gray-100'>{t(area + ".subTheme")}</h3>
+            <h3 className='h4 mb-4 text-gray-100'>{t(area + ".subTheme")}</h3>
             <p className='text-gray-200 p'>{t(area + ".description")}</p>
         </div>
     )
@@ -78,10 +78,10 @@ export default function AreaOfFocus() {
     return (
         <section id="areaOfFocus" className='relative bg-black-100 mb-20'  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
             <div className='content md:block hidden'>
-                <div className="w-11/12">
-                    <h1 className=' mt-24 mb-10 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
+                <div>
+                    <h1 className='mb-10 text-green-100 h1'>{t("areaOfFocus")}</h1>
                 </div>
-                <div className='flex justify-between mb-12 flex-wrap'>
+                <div className='flex justify-between mb-6 flex-wrap'>
                     {
                         Object.keys(areas).map((a, index) => {
                             return (
