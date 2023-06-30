@@ -45,7 +45,7 @@ function HeroSection() {
                     })
                     }
                 </p>
-                <p className="mb-6 p text-gray-200 " data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">{t("origin")}</p>
+                <p className="p text-gray-200 " data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">{t("origin")}</p>
             </div>
         </section>
     )

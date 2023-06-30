@@ -26,7 +26,7 @@ function Home() {
       <Header />
     
       {/*  Page content */}
-      <main className="flex-grow bg-black-100 text-gray-100 flex flex-col gap-10 sm:gap-14 lg:gap-20">
+      <main className="flex-grow bg-black-100 text-gray-100 flex flex-col gap-12 sm:gap-14 lg:gap-20">
       <GlowingBlob />
         {/*  Page sections */}
         <HeroSection />
