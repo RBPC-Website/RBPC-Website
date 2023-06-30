@@ -69,7 +69,7 @@ function Header() {
           </div>
 
           {/* Site navigation */}
-          <nav className="flex flex-grow xsmall:scale-90">
+          <nav className="flex flex-grow xsmall:scale-[88%] xsmall:translate-x-[-22%]">
             <ul className="flex flex-grow justify-end items-center gap-3 text-center">
               <li>
                 <Dropdown color={'light'} label={localStorage.getItem('i18nextLng') == 'vi' ? 'Tiếng Việt' : "English"}>
