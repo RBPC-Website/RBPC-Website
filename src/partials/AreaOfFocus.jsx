@@ -76,7 +76,7 @@ export default function AreaOfFocus() {
     })
 
     return (
-        <section className='relative bg-black-100 mb-20'>
+        <section id="areaOfFocus" className='relative bg-black-100 mb-20'>
             <div className='content md:block hidden'>
                 <div className="w-11/12">
                     <h1 className=' mt-24 mb-20 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>

@@ -7,7 +7,7 @@ function Timeline() {
     const { t } = useTranslation(["timeline"]);
 
     return (
-        <section className="relative bg-black-100 -mt-1 pb-20">
+        <section id="timeline" className="relative bg-black-100 -mt-1 pb-20">
             {/*
                 Use the page content here, you only need to copy {t("<the content>")}:
 

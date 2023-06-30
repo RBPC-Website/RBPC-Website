@@ -48,7 +48,7 @@ function PanelOfJudges() {
   }, [handleResize]);
   
   return (
-    <section className="relative bg-black-100 lg:px-20 md:px-20 -mt-1 px-7 pb-20">
+    <section id="judges" className="relative bg-black-100 lg:px-20 md:px-20 -mt-1 px-7 pb-20">
       <h2 className="h1 text-left font-extrabold text-[#00FFA8]">
         Panel of Judges
       </h2>

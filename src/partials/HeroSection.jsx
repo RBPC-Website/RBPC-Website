@@ -97,7 +97,7 @@ function HeroSection() {
     let themeDescriptionArr = t("themeDescription").split("<b>") 
 
     return (
-        <section className="relative bg-black-100 flex flex-col justify-center items-center">
+        <section id="hero" className="relative bg-black-100 flex flex-col justify-center items-center">
 
             {/*   
                 Use the page content here, you only need to copy {t("<the content>")}:

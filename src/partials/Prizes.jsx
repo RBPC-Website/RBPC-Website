@@ -50,7 +50,7 @@ function Prizes() {
 	
 
     return (
-        <section className="relative bg-black-100">
+        <section id="prizes" className="relative bg-black-100">
             {/*
                 Use the page content here, you only need to copy {t("<the content>")}:
 
