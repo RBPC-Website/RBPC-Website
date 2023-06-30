@@ -29,7 +29,7 @@ function App() {
     // Simulate loading process
     const loadingTimeout = setTimeout(() => {
       setIsLoadingComplete(true);
-    }, 7450);
+    }, 2600);
 
     // Clean up the timeout on component unmount
     return () => clearTimeout(loadingTimeout);

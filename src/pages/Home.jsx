@@ -10,6 +10,7 @@ import WhoCanEnter from '../partials/WhoCanEnter';
 import Timeline from '../partials/Timeline';
 import Footer from '../partials/Footer';
 import Prize from '../partials/Prizes';
+import Sponsorship from '../partials/Sponsorship';
 import HeroSection from '../partials/HeroSection';
 import PanelOfJudges from '../partials/PanelOfJudges';
 import BackToTop from '../partials/BackToTop';
@@ -31,6 +32,7 @@ function Home() {
         <HeroSection />
         <AreaOfFocus />
         <Prize />
+        <Sponsorship/>
         <WhoCanEnter />
         <Timeline />
         <PanelOfJudges />

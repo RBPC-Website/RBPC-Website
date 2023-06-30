@@ -47,7 +47,7 @@ export default function Countdown() {
     }, []);
 
     useEffect(() => {
-        document.querySelector('header').style.top = showBanner ? document.querySelector('#sticky-banner').offsetHeight + 'px' : '0px';
+        document.querySelector('header').style.top = showBanner ? document.querySelector('#sticky-banner').offsetHeight - 1 + 'px' : '0px';
     }, [showBanner]);
 
     return (
@@ -62,7 +62,7 @@ export default function Countdown() {
                                     <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z"/>
                                 </svg>
                             </span>
-                            <p className="text-center"><span className="font-medium">{t(getTimeLeft(Date.now()).event)}</span> {t("willStartIn")} <span className="font-medium">{timeFormat}</span></p>
+                            <p className="text-center"><span className="font-medium">{t(getTimeLeft(Date.now()).event)}</span> <span className="font-medium">{t("willStartIn")}</span> <span className="font-medium">{timeFormat}</span></p>
                         </div>
                     </div>
                     <div className="flex items-center">
