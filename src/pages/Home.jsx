@@ -25,9 +25,9 @@ function Home() {
       <Countdown />
       <Header />
     
+      <GlowingBlob />
       {/*  Page content */}
       <main className="flex-grow bg-black-100 text-gray-100 flex flex-col gap-12 sm:gap-14 lg:gap-20">
-      <GlowingBlob />
         {/*  Page sections */}
         <HeroSection />
         <AreaOfFocus />
