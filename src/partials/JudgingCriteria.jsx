@@ -29,7 +29,7 @@ function JudgingCriteria() {
 
             <div className='content'>
                 {/* Container div */}
-                <div className="w-full py-10 pb-24">
+                <div className="w-full">
                     {/* For devices with width >= 768px */}
                     {/* Use for maintaining the text's position */}
                     <div className='relative hidden md:block w-[70%]'>

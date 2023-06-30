@@ -27,7 +27,7 @@ function RulesAndRegulation() {
             </div>
             {/* Rules and regulation */}
             <div className='bg-gray-100'>
-                <div className='py-12 flex justify-center flex-col gap-10 content'>
+                <div className='flex justify-center flex-col gap-10 content py-10'>
                     <h1 className='h1 text-black-100 text-center'>{t("rulesAndRegulations")}</h1>
                     <Badge index={1}>{t("openToAll")}</Badge>
                     <Badge index={2}>{t("teamMembersFromDifferentSchools")}</Badge>

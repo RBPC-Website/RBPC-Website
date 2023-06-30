@@ -31,8 +31,8 @@ function HeroSection() {
                     <p className="p" data-aos="fade-up" data-aos-offset="200" data-aos-delay="2300" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">{t("description")}</p>
                 </div>
             </div>
-            <div className='content flex justify-center items-center flex-col text-center mb-20'>
-                <h1 className='text-green-100 h1 my-10'  data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div className='content flex justify-center items-center flex-col text-center'>
+                <h1 className='text-green-100 h1 mb-10 mt-14'  data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     {t("beNext")}
                 </h1>
                 <p className="mb-6 p text-gray-200 " data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">

@@ -2,8 +2,8 @@
 .accordion{
     margin-right: auto;
     margin-left: auto; 
-    width: 90%;
-    padding: 15px;
+    /* width: 90%; */
+    /* padding: 15px; */
 }
 .accordion .accordion-content{
     margin: 10px 0;

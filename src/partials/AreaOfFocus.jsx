@@ -76,7 +76,7 @@ export default function AreaOfFocus() {
     })
 
     return (
-        <section id="areaOfFocus" className='relative bg-black-100 mb-20'  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+        <section id="areaOfFocus" className='relative bg-black-100'  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
             <div className='content md:block hidden'>
                 <div>
                     <h1 className='mb-10 text-green-100 h1'>{t("areaOfFocus")}</h1>
@@ -98,11 +98,11 @@ export default function AreaOfFocus() {
                 {getArea(area)}
             </div>
             <div className="content accordion md:hidden block mb-10">
-                <h1 className=' mt-24 text-4xl font-extrabold leading-none tracking-tight text-green-100 lg:text-6xl'>{t("areaOfFocus")}</h1>
+                <h1 className='text-green-100 h1'>{t("areaOfFocus")}</h1>
             </div>
-            <div className="accordion md:hidden block relative z-10">
+            <div className="content accordion md:hidden block relative z-10">
                 <div className="accordion-content">
-                    <header className='px-[15px] pb-[15px]'>
+                    <header className='pb-[15px]'>
                         <span className="title h3 ">{t("tourismHospitality.major")}</span>
                         <i className="fa-solid fa-plus"></i>
                     </header>
@@ -113,7 +113,7 @@ export default function AreaOfFocus() {
                     </div>
                 </div>
                 <div className="accordion-content">
-                    <header className='px-[15px] pb-[15px]'>
+                    <header className='pb-[15px]'>
                         <span className="title h3">{t("digitalMarketing.major")}</span>
                         <i className="fa-solid fa-plus"></i>
                     </header>
@@ -124,7 +124,7 @@ export default function AreaOfFocus() {
                     </div>
                 </div>
                 <div className="accordion-content">
-                    <header className='px-[15px] pb-[15px]'>
+                    <header className='pb-[15px]'>
                         <span className="title h3">{t("businessTechnology.major")}</span>
                         <i className="fa-solid fa-plus"></i>
                     </header>
@@ -135,7 +135,7 @@ export default function AreaOfFocus() {
                     </div>
                 </div>
                 <div className="accordion-content">
-                    <header className='px-[15px] pb-[15px]'>
+                    <header className='pb-[15px]'>
                         <span className="title h3">{t("managementChange.major")}</span>
                         <i className="fa-solid fa-plus"></i>
                     </header>
@@ -146,7 +146,7 @@ export default function AreaOfFocus() {
                     </div>
                 </div>
                 <div className="accordion-content">
-                    <header className='px-[15px] pb-[15px]'>
+                    <header className='pb-[15px]'>
                         <span className="title h3 max-w-[90%]">{t("economicsBlockchainFinance.major")}</span>
                         <i className="fa-solid fa-plus"></i>
                     </header>
