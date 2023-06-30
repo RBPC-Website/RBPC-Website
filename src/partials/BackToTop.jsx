@@ -29,11 +29,12 @@ const BackToTop = () => {
           behavior: "smooth",
         });
       }}
-      className={`w-8 h-8 p-2 rounded-full transform transition-all z-10 rotate-90 bg-green-100 fixed right-6 bottom-6 hover:cursor-pointer ${
-        isShowingBackToTopButton ? "opacity-100" : "opacity-0"
+      className={`sm:flex flex-col hidden justify-center items-center w-12 aspect-square transform transition-all z-10 bg-green-100 opacity-70 text-black-100 fixed right-6 bottom-6 hover:cursor-pointer ${
+        isShowingBackToTopButton ? "sm:flex" : "sm:hidden"
       }`}
     >
-      <img src={leftIcon} alt="back to top" className="transform"/>
+      <img src={leftIcon} alt="back to top" className="transform rotate-90 w-[60%] -mb-1"/>
+      <p>TOP</p>
     </div>
   );
 };
