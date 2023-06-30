@@ -57,8 +57,8 @@ function Header() {
 
   return (
     <>
-    <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top && 'bg-white backdrop-blur-sm shadow-lg'}`}>
-      <div className="content">
+    <header className={`fixed xsmall:pt-2 w-full z-30 md:bg-opacity-90 transition-opacity duration-300 ease-in-out ${!top && 'bg-white backdrop-blur-sm shadow-lg'}`}>
+      <div className="content max-w-6xl px-5 mx-auto">
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Site branding */}
@@ -69,8 +69,8 @@ function Header() {
           </div>
 
           {/* Site navigation */}
-          <nav className="flex flex-grow">
-            <ul className="flex flex-grow justify-end flex-wrap items-center gap-3">
+          <nav className="flex flex-grow xsmall:scale-90">
+            <ul className="flex flex-grow justify-end items-center gap-3 text-center">
               <li>
                 <Dropdown color={'light'} label={localStorage.getItem('i18nextLng') == 'vi' ? 'Tiếng Việt' : "English"}>
                     <Dropdown.Item onClick={() => handleLanguageChange('en')}>English</Dropdown.Item>

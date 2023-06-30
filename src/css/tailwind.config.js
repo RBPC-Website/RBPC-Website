@@ -162,6 +162,10 @@ module.exports = {
 
       'small': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
+      
+      'xsmall': {'max': '400px'},
+      // => @media (max-width: 400px) { ... }
+
     },
   },
   variants: {

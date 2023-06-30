@@ -59,7 +59,7 @@ function Timeline() {
                     <p className='p pb-3' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("preliminaryResultAnnouncementDetail")}</p>
                 </div>
                 {/* Phase 2 */}
-                <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-2 text-right md:px-16 pr-12 py-12'>
+                <div className='relative lg:-mt-[2.5px] md:-mt-[3px] -mt-[2.3px] phase-2 text-right md:px-16 pr-12 py-12'>
                     {/* Phase Title */}
                     <h3 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h3 pb-3' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         {t("preliminarySemiFinal")}
@@ -75,7 +75,7 @@ function Timeline() {
                     <p className='p pb-3' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("finalistAnnouncementDescription")}</p>
                 </div>
                 {/* Phase 3 */}
-                <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-3 md:px-16 pl-12 py-12'>
+                <div className='relative lg:-mt-[2.5px] md:-mt-[3px] -mt-[2.3px] phase-3 md:px-16 pl-12 py-12'>
                     {/* Phase Title */}
                     <h3 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h3 pb-3' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         {t("mentoringWorkshops")}
@@ -91,7 +91,7 @@ function Timeline() {
                     <p className='p pb-3' data-aos="fade-right" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("workshopForFinalistsDescription")}</p>
                 </div>
                 {/* Phase 4 */}
-                <div className='relative xl:-mt-[1.6px] md:-mt-[1.8px] -mt-[1.6px] phase-4 text-right md:px-16 pr-12 py-12'>
+                <div className='relative lg:-mt-[2.5px] md:-mt-[2.5px] -mt-[2.3px] phase-4 text-right md:px-16 pr-12 py-12'>
                     {/* Phase Title */}
                     <h3 className='text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200 h3 pb-3' data-aos="fade-left" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         {t("grandFinale")}
