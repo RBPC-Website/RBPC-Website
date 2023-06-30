@@ -10,15 +10,15 @@
 
 #blob {
     background-color: white;
-    height: 350px;
+    height: 250px;
     position: absolute;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
     z-index: 1;
-    background: linear-gradient(to right, #f3f3f3, #f3f3f3);
-    animation: rotate 20s infinite;
-    filter: blur(200px);
+    background: linear-gradient(to right, #0f6ebc, #00FFA8);
+    animation: rotate 10s linear infinite;
+    filter: blur(150px);
     aspect-ratio: 1/1;
   }
