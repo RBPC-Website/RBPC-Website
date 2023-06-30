@@ -48,7 +48,7 @@ function PanelOfJudges() {
   }, [handleResize]);
   
   return (
-    <section id="judges" className="relative bg-black-100 lg:px-20 md:px-20 -mt-1 px-7 pb-20">
+    <section id="judges" className="relative bg-black-100 content pb-20">
       <h2 className="h1 text-left font-extrabold text-[#00FFA8]">
         Panel of Judges
       </h2>
@@ -66,24 +66,7 @@ function PanelOfJudges() {
           slidesPerView={cardsPerView}
         >
           <SwiperSlide>
-            {/* <div className="keen-slider__slide number-slide1 rounded-[30px] overflow-hidden">
-              <img alt="..." src={judge1} />
-              <div className="h-full w-full absolute left-0 flex flex-col rounded-[30px] overflow-hidden justify-end bottom-0 top-0 right-0 bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.76)] px-[35px] pb-2.5 pt-7">
-                <div className="h-[137px] w-[225px] leading-none">
-                  <p className="inline text-2xl font-bold text-white">
-                    Professor Robert McClelland
-                    <br />
-                  </p>
-                  <p className="inline text-base font-normal mt-5 text-[#DEDEDE]">
-                    Dean, School of Business and Management
-                    <br />
-                  </p>
-                  <p className="inline text-base font-normal text-[#DEDEDE]">
-                    RMIT Vietnam
-                  </p>
-                </div>
-              </div>
-            </div> */}
+            
             <PoJCard 
               cardImage={judge1} 
               name={'Professor Robert McClelland'} 
