@@ -10,6 +10,7 @@ import WhoCanEnter from '../partials/WhoCanEnter';
 import Timeline from '../partials/Timeline';
 import Footer from '../partials/Footer';
 import Prize from '../partials/Prizes';
+import Sponsorship from '../partials/Sponsorship';
 import HeroSection from '../partials/HeroSection';
 import PanelOfJudges from '../partials/PanelOfJudges';
 import BackToTop from '../partials/BackToTop';
@@ -24,13 +25,14 @@ function Home() {
       <Countdown />
       <Header />
     
-      {/*  Page content */}
-      <main className="flex-grow bg-black-100 text-gray-100">
       <GlowingBlob />
+      {/*  Page content */}
+      <main className="flex-grow bg-black-100 text-gray-100 flex flex-col gap-12 sm:gap-14 lg:gap-20">
         {/*  Page sections */}
         <HeroSection />
         <AreaOfFocus />
         <Prize />
+        <Sponsorship/>
         <WhoCanEnter />
         <Timeline />
         <PanelOfJudges />

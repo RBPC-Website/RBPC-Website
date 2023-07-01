@@ -9,22 +9,22 @@
 
 .phase-1::before {
     border-bottom-left-radius: 50px;
-    @apply left-0 border-l-solid border-b-solid
+    @apply left-0 border-l-solid border-b-solid translate-y-[-2px]
 }
 
 .phase-2::before {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    @apply right-0 border-t-solid border-r-solid border-b-solid
+    @apply right-0 border-t-solid border-r-solid border-b-solid translate-y-[-1px] translate-x-[-0.8px]
 }
 
 .phase-3::before {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    @apply left-0 border-t-solid border-l-solid border-b-solid
+    @apply left-0 border-t-solid border-l-solid border-b-solid 
 }
 
 .phase-4::before {
     border-top-right-radius: 50px;
-    @apply right-0 border-t-solid border-r-solid
+    @apply right-0 border-t-solid border-r-solid translate-y-[1px] translate-x-[-0.8px]
 }

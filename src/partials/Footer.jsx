@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
         
-    <footer className="w-full mx-auto bg-gray-100 text-sm text-center font-normal z-10">
-        <div className="content">
+    <footer className="w-full mx-auto bg-gray-100 text-sm text-center font-normal">
+        <div className="content z-10">
             <hr className="border-gray-200" />
             <div className="bg-gray-100 flex flex-wrap items-center justify-between gap-4 py-6">
                 <div className="flex flex-col items-center sm:items-start gap-2 w-full sm:w-[45%] sm:min-w-[270px]">

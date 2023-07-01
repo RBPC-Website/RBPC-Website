@@ -7,7 +7,7 @@ function WhoCanEnter() {
     const { t } = useTranslation(["who-can-enter"]);
 
     return (
-        <section className="relative bg-black-100 mt-20">
+        <section className="relative bg-black-100">
             {/*   
                 Use the page content here, you only need to copy {t("<the content>")}:
 
@@ -15,7 +15,7 @@ function WhoCanEnter() {
                 Description: {t("description")}
             */}
             {/* Card Section */}
-            <div className='content'>
+            <div className='content translate-y-2'>
                 <div className='relative w-full bg-gray-100 pt-12 xl:px-[200px] md:px-[60px] px-[40px] rounded-t-[24px]'>
                     {/* Who Can Enter Title */}
                     <h1 className='h1 text-black-100 text-center' data-aos="zoom-out" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">{t("whoCanEnter")}?</h1>

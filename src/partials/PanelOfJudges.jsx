@@ -26,7 +26,7 @@ function PanelOfJudges() {
   const [cardsPerView, setCardsPerView] = useState(2)
   const swiperRef = React.useRef(null);
   // I dont know how to get number of children so change this 5 to the total amount of judge we have
-  const dots = useMemo(() => new Array(calculateTotalPages(5, cardsPerView)).fill(0), [cardsPerView]);
+  const dots = useMemo(() => new Array(calculateTotalPages(7, cardsPerView)).fill(0), [cardsPerView]);
 
   function handleResize() {
     if (window.innerWidth <= 640) { // sm
@@ -39,12 +39,17 @@ function PanelOfJudges() {
   }
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize)
-  })
-
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [handleResize]);
+  
   return (
-    <section className="relative bg-black-100 lg:px-20 md:px-20 -mt-1 px-7 pb-20">
-      <h2 className="text-[68px] text-left font-extrabold text-[#00FFA8]">
+    <section id="judges" className="relative bg-black-100 content"  data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
+      <h2 className="h1 text-left font-extrabold text-[#00FFA8]">
         Panel of Judges
       </h2>
       <div className="w-full h-3/4 judges-slides relative my-10">
@@ -61,24 +66,7 @@ function PanelOfJudges() {
           slidesPerView={cardsPerView}
         >
           <SwiperSlide>
-            {/* <div className="keen-slider__slide number-slide1 rounded-[30px] overflow-hidden">
-              <img alt="..." src={judge1} />
-              <div className="h-full w-full absolute left-0 flex flex-col rounded-[30px] overflow-hidden justify-end bottom-0 top-0 right-0 bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.76)] px-[35px] pb-2.5 pt-7">
-                <div className="h-[137px] w-[225px] leading-none">
-                  <p className="inline text-2xl font-bold text-white">
-                    Professor Robert McClelland
-                    <br />
-                  </p>
-                  <p className="inline text-base font-normal mt-5 text-[#DEDEDE]">
-                    Dean, School of Business and Management
-                    <br />
-                  </p>
-                  <p className="inline text-base font-normal text-[#DEDEDE]">
-                    RMIT Vietnam
-                  </p>
-                </div>
-              </div>
-            </div> */}
+            
             <PoJCard 
               cardImage={judge1} 
               name={'Professor Robert McClelland'} 
@@ -113,18 +101,32 @@ function PanelOfJudges() {
               description={'Dean, School of Business and Management'} 
               school={'RMIT Vietnam'}/>
           </SwiperSlide>
+          <SwiperSlide>
+            <PoJCard 
+              cardImage={judge1}
+              name={'Professor Robert McClelland'} 
+              description={'Dean, School of Business and Management'} 
+              school={'RMIT Vietnam'}/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <PoJCard 
+              cardImage={judge1}
+              name={'Professor Robert McClelland'} 
+              description={'Dean, School of Business and Management'} 
+              school={'RMIT Vietnam'}/>
+          </SwiperSlide>
         </Swiper>
-        <div className="w-full flex mt-9 items-center justify-center">
+        <div className="w-full flex mt-9 items-center md:justify-center justify-between">
           {/* Left icon */}
           <div
             onClick={() => swiperRef?.current?.slidePrev?.()}
-            className="cursor-pointer hover:opacity-80 transition-all mr-10 w-8 h-8 flex items-center justify-center bg-white rounded-full p-1"
+            className="cursor-pointer hover:opacity-80 transition-all md:mr-10 mr-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2 z-10"
           >
             <img src={leftIcon} className="w-full h-full object-contain select-none" />
           </div>
 
           {/* Dot pages */}
-          <div className="flex flex-wrap -mx-2 gap-2">
+          <div className="flex flex-wrap -mx-2 gap-[2px] z-10">
             {dots?.map((dot, idx) => (
               <div key={idx} className="px-2">
                 <div
@@ -142,7 +144,7 @@ function PanelOfJudges() {
           {/* Right icon */}
           <div
             onClick={() => swiperRef?.current?.slideNext?.()}
-            className="cursor-pointer hover:opacity-80  transition-all ml-10 w-8 h-8 flex items-center justify-center bg-white rounded-full p-1"
+            className="cursor-pointer hover:opacity-80 transition-all md:ml-10 ml-0 w-8 h-8 flex items-center justify-center bg-white rounded-full py-2 z-10"
           >
             <img src={rightIcon} className="w-full h-full object-contain select-none" />
           </div>

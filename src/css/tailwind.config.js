@@ -13,7 +13,7 @@ module.exports = {
       },
       colors: {
         gray: {
-          100: '#F3F3F3', // var(--white)
+          100: '#F1F1F1', // var(--white)
           200: '#9CA3AF', // var(--para-color)
         },
         blue: {
@@ -162,6 +162,10 @@ module.exports = {
 
       'small': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
+      
+      'xsmall': {'max': '400px'},
+      // => @media (max-width: 400px) { ... }
+
     },
   },
   variants: {

@@ -1,0 +1,115 @@
+:root{
+    --main-color: #ABA1FF;
+    --main-color-dark: #675FB2;
+    --ray-color: #FFD6BB;
+    --spark-color: #00ffaa;
+    --back-color: #2f2e4e;
+}
+
+#lastray{
+    margin: auto;
+    border-radius: 100%;
+    border: 0px solid;
+    border-color: var(--ray-color);
+    opacity: 1;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+#loading-page{
+    background: var(--back-color);
+    border-radius: 100%;
+    top:50%;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    width: 400vh;
+    height: 400vh;
+    position: fixed;
+    overflow: hidden !important;
+    transition-duration: 1s;
+}
+#loader{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    position: absolute;
+    max-height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.element{
+    margin: auto;
+    position: absolute;
+}
+
+.spark{
+    width: 400px;
+    height: 400px;
+}
+.particles{
+    transform: translate(-50%, -50%);
+}
+.particle{
+    background-color: var(--spark-color);
+    width:8px;
+    height:8px;
+    border-radius: 100%;
+    opacity: 0;
+    animation: particle 1s infinite cubic-bezier(0.25,0.1,0.25,1);
+    left: 0%;
+    top: 0%;
+    z-index: -10;
+}
+.spark1{transform: rotate(20deg);}
+.spark2{transform: rotate(40deg);}
+.spark3{transform: rotate(66deg);}
+.spark4{transform: rotate(172deg);}
+.spark5{transform: rotate(110deg);}
+.spark6{transform: rotate(130deg);}
+.spark7{transform: rotate(-100deg);}
+.spark8{transform: rotate(-50deg);}
+.spark9{transform: rotate(-80deg);}
+.spark10{transform: rotate(-173deg);}
+.spark11{transform: rotate(-7deg);}
+.spark12{transform: rotate(-133deg);}
+
+.particle1{animation-delay: .2s;}
+.particle2{animation-delay: 0.4s;}
+.particle3{animation-delay: 0.6s;}
+.particle4{animation-delay: .8s;}
+.particle5{animation-delay: 1s;}
+.particle6{animation-delay: 1.2s;}
+.particle7{animation-delay: 1.4s;}
+.particle8{animation-delay: 1.6s;}
+.particle9{animation-delay: 1.8s;}
+.particle10{animation-delay: 2s;}
+.particle11{animation-delay: .7s;}
+.particle12{animation-delay: 1.7s;}
+
+.loaded{
+    width: 0px !important;
+    height: 0px !important;
+    transition: 1.2s ease-out;
+}
+.whitebk{
+    background:black!important;
+}
+.opzero{
+    opacity: 0;
+    transition: 1s ease-out;
+}
+
+@keyframes ray {
+    0% {width: 10px; height: 10px; opacity: 1; border-width: 1px;}
+    100% {width: 200px; height: 200px; opacity: 0; border-width: 5px;}
+}
+@keyframes particle {
+    0% {left:0%; top:0%; opacity: 0;}
+    70% {opacity: 1;}
+    100% {left:50%; top:50%; opacity: 0;}
+}

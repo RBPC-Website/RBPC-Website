@@ -2,8 +2,8 @@
 .accordion{
     margin-right: auto;
     margin-left: auto; 
-    width: 90%;
-    padding: 15px;
+    /* width: 90%; */
+    /* padding: 15px; */
 }
 .accordion .accordion-content{
     margin: 10px 0;
@@ -28,13 +28,22 @@
 }
 .accordion-content header .title{
     font-weight: 500;
-    color: #00FFA8;
+    color: #9CA3AF;
 
 }
 .accordion-content header i{
     font-size: 15px;
+    color: #9CA3AF;
+}
+
+.accordion-content header:hover .title{
+    color: #00FFA8;
+
+}
+.accordion-content header:hover i{
     color: #00FFA8;
 }
+
 .accordion-content .description{
     height: 0px;
     margin-top: 10px;

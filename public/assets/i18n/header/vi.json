@@ -1,6 +1,11 @@
 {
     "language": "Ngôn Ngữ",
-    "contact": "Liên Hệ",
-    "home": "Trang Chủ",
-    "signup": "Đăng Ký"
+    "explore": "Khám phá",
+    "register": "Đăng Ký",
+    "areaOfFocus": "Lĩnh vực chính",
+    "prizes": "Giải thưởng",
+    "timeline": "Lịch trình",
+    "judges": "Ban giám khảo",
+    "rules": "Quy luật và quy định",
+    "hero": "Phần tiêu đề chính"
 }

@@ -9,7 +9,7 @@ function RulesAndRegulation() {
     const { t } = useTranslation(["rules-regulation"]);
 
     return (
-        <section className="relative bg-black-100">
+        <section id="rules" className="relative bg-black-100 -mt-10 sm:-mt-14 lg:-mt-20"  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
             {/*
                 Use the page content here, you only need to copy {t("<the content>")}:
                 {t("rulesAndRegulations")}
@@ -27,7 +27,7 @@ function RulesAndRegulation() {
             </div>
             {/* Rules and regulation */}
             <div className='bg-gray-100'>
-                <div className='py-12 flex justify-center flex-col gap-10 content'>
+                <div className='flex justify-center flex-col gap-10 content pb-10'>
                     <h1 className='h1 text-black-100 text-center'>{t("rulesAndRegulations")}</h1>
                     <Badge index={1}>{t("openToAll")}</Badge>
                     <Badge index={2}>{t("teamMembersFromDifferentSchools")}</Badge>

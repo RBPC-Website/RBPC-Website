@@ -1,6 +1,11 @@
 {
     "language": "Language",
-    "contact": "Contact Us",
-    "home": "Home",
-    "signup": "Sign up"
+    "explore": "Explore",
+    "register": "Register",
+    "areaOfFocus": "Area Of Focus",
+    "prizes": "Prizes",
+    "timeline": "Timeline",
+    "judges": "Judges",
+    "rules": "Rules and Regulations",
+    "hero": "Hero"
 }

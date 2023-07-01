@@ -50,7 +50,7 @@ function Prizes() {
 	
 
     return (
-        <section className="relative bg-black-100">
+        <section id="prizes" className="relative bg-black-100"  data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
             {/*
                 Use the page content here, you only need to copy {t("<the content>")}:
 
@@ -74,7 +74,7 @@ function Prizes() {
                             <img className=' aspect-[8/10] h-full' src={prize} alt="" />
                         </div>
                         <div className="flex flex-col z-10" data-aos="flip-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom">
-                            <h3 className='h3 test text-green-100 text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200'>45 {t('quantity')}</h3>
+                            <h3 className='h2 test text-green-100 text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-200'>45 {t('quantity')}</h3>
                             <span className='h4 text-gray-100'>VND</span>
                             <h3 className='h3 mt-2'>{t("firstPrize")}</h3>
                             <p className='p text-gray-200'>{t('teamMembers')}</p>
