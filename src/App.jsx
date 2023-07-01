@@ -37,18 +37,18 @@ function App() {
 
   return (
     <Suspense fallback={<LoadingAnimation />}>
-      <Home />
+      {/* <Home />
       <LoadingAnimation />
-      
+       */}
      {/* Uncomment below for 2nd approach */}
           
-      {/* {!isLoadingComplete ? (
+      {!isLoadingComplete ? (
         <LoadingAnimation />
       ) : (
           <Routes>
             <Route exact path="/" element={<Home />} />
           </Routes>
-      )} */}
+      )}
     </Suspense>
   );
 }
